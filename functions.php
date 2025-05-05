@@ -34,6 +34,10 @@ define('THEME_TEMPLATE_PATH', THEME_PATH . '/templates');
 // Define URL path for any custom fonts or icons, if applicable
 define('THEME_FONTS_URL', THEME_URL . '/assets/fonts');
 
+// include cpt file
+require_once THEME_INC_PATH . '/class-cpt.php';
+require_once THEME_INC_PATH . '/class-taxonomies.php';
+
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
