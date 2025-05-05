@@ -1,0 +1,9 @@
+node_modules/
+vendor/
+.DS_Store
+*.log
+*.lock
+*.zip
+.sass-cache/
+*.map
+assets/css/theme-styles.css  # If you want to exclude compiled files and only include source files
