@@ -15,15 +15,13 @@ get_header(); ?>
         the_post();
 
         get_template_part('template-parts/homepage', 'hero');
-        get_template_part('template-parts/homepage', 'about');
-        get_template_part('template-parts/homepage', 'services');
-        get_template_part('template-parts/homepage', 'testimonials');
-        get_template_part('template-parts/homepage', 'statistics');
-        get_template_part('template-parts/homepage', 'locations');
-        get_template_part('template-parts/homepage', 'call-to-action');
-        get_template_part('template-parts/homepage', 'features');
-        get_template_part('template-parts/homepage', 'pricing');
-        get_template_part('template-parts/homepage', 'contact');
+        get_template_part('template-parts/homepage', 'introduction');
+        get_template_part('template-parts/homepage', 'destination');
+        get_template_part('template-parts/homepage', 'guide');
+        get_template_part('template-parts/homepage', 'regions');
+        get_template_part('template-parts/homepage', 'accomodation');
+        get_template_part('template-parts/homepage', 'itineraries');
+        get_template_part('template-parts/homepage', 'activities');
 
         // If comments are open or we have at least one comment, load up the comment template.
         if (comments_open() || get_comments_number()) :
