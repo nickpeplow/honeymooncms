@@ -25,6 +25,8 @@ get_header('default');
     <header>
         <h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
     </header>
+
+	
     <?php
 			endif;
 
@@ -49,6 +51,8 @@ get_header('default');
 
 		endif;
 		?>
+
+
 
 </main><!-- #main -->
 

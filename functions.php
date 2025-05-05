@@ -170,35 +170,17 @@ function theme_enqueue_styles() {
     // FontAwesome
     wp_enqueue_style(
         'fontawesome',
-        'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/fontawesome.min.css',
-        array(), // No dependencies
-        '6.6.0', // Version
-        'all'    // Media
+        'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css',
     );
 
     // Google Fonts
     wp_enqueue_style(
-        'google-fonts-open-sans',
-        'https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap',
+        'google-fonts-Lato',
+        'https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap',
         array(),
         null // Use null for Google Fonts to avoid cache-busting versions
     );
     
-    wp_enqueue_style(
-        'google-fonts-raleway',
-        'https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap',
-        array(),
-        null
-    );
-
-    // Owl Carousel
-    wp_enqueue_style(
-        'owl-carousel',
-        'https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css',
-        array(),
-        '2.3.4'
-    );
-
 
 	wp_enqueue_style( 'bali-honey-moon-custom-style', THEME_CSS_URL . '/styles.css', array(), _S_VERSION, false );
 
@@ -215,35 +197,26 @@ add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 
 
 function theme_enqueue_scripts() {
-    // FontAwesome
+	 // jQuery (if needed, but WordPress includes it by default)
+	 wp_enqueue_script('jquery');
+ 
+    // themesberg
     wp_enqueue_script(
-        'fontawesome',
-        'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js',
-        array(), // No dependencies
-        '6.6.0', // Version
-        true     // Load in footer
-    );
-
-    // jQuery (if needed, but WordPress includes it by default)
-    wp_enqueue_script('jquery');
-
-    // Owl Carousel
-    wp_enqueue_script(
-        'owl-carousel',
-        'https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js',
+        'themesberg',
+        'https://unpkg.com/@themesberg/flowbite@1.2.0/dist/flowbite.bundle.js',
         array('jquery'), // jQuery dependency
-        '2.3.4',
+        null,
         true // Load in footer
     );
-
-    // Custom JS
-    wp_enqueue_script(
-        'theme-custom-js',
-        THEME_JS_URL . '/app.js',
-        array('jquery'), // Add dependencies if necessary
-        null,                // Version (optional)
-        true                 // Load in footer
-    );
+	// alpinejs
+	wp_enqueue_script(
+		'alpinejs',
+		'https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.9.5/cdn.js',
+		array('jquery'), // jQuery dependency
+		null,
+		true // Load in footer
+	);
+    
 }
 add_action('wp_enqueue_scripts', 'theme_enqueue_scripts');
 
