@@ -22,6 +22,7 @@ get_header(); ?>
         get_template_part('template-parts/homepage', 'accomodation');
         get_template_part('template-parts/homepage', 'itineraries');
         get_template_part('template-parts/homepage', 'activities');
+        get_template_part('template-parts/homepage', 'dining');
 
         // If comments are open or we have at least one comment, load up the comment template.
         if (comments_open() || get_comments_number()) :
