@@ -107,258 +107,84 @@
           <strong>favorite romantic activities</strong> that make a perfect Bali
           Honeymoon:
         </p>
-        <div class="flex flex-wrap lg:flex-nowrap">
-          <div class="basis-1/3">
-            <figure class="min-[280px]:w-1/1 p-2 relative">
-              <img
-                class="w-full h-[280px] min-[280px]:h-full object-cover rounded-lg"
-                width="180"
-                height="180"
-                src="<?php echo get_template_directory_uri(); ?>/assets/images/campuhan-ridge-walk.webp"
-                alt="Tab 01"
-              />
-            </figure>
-          </div>
-          <div class="w-full lg:w-2/3">
-            <div class="flex flex-col justify-center p-5 pl-3">
-              <div class="flex justify-between mb-1">
-                <header>
-                  <div class="font-caveat text-xl font-medium text-sky-500">
-                    <h3 class="text-black">Seminyak</h3>
-                    <div class="item_categories mb-2 mt-2">
-                      <span class="">Active</span><span>Nature</span>
-                    </div>
-                    <span class="location text-sm text-gray-500"
-                      >5 min. walk from central Ubud</span
-                    >
-                    <p class="widget_text_teaser my-2">
-                      Campuhan Ridge walk is a spectacular but easy romantic
-                      walk (30 minutes one-way), taking you past the ancient
-                      Gunung Lebah temple and over a ridge overlooking two
-                      jungle valleys. The route gives plenty of opportunity to
-                      shoot amazing photos of...
-                    </p>
-                    <div class="border-dashed h-1 border-t border-color"></div>
-                    <a
-                      class="read_more read_moreaaaa text-right no-underline text-black block"
-                      href="#"
-                      >Read More ↓</a
-                    >
+        <?php
+$args = array(
+  'post_type' => 'activities',
+  'posts_per_page' => -1,
+);
+
+$activities_query = new WP_Query($args);
+
+if ($activities_query->have_posts()) :
+  while ($activities_query->have_posts()) : $activities_query->the_post();
+    $activity_terms = wp_get_post_terms(get_the_ID(), 'activities_activity_types');
+    $region_terms = wp_get_post_terms(get_the_ID(), 'activities_regions'); // Replace 'region' with your actual taxonomy name
+    $region_name = !empty($region_terms) ? $region_terms[0]->name : '';
+    $location = get_field('location'); // Optional ACF field
+    ?>
+    <div class="flex flex-wrap lg:flex-nowrap mb-6">
+      <div class="basis-1/3">
+        <figure class="min-[280px]:w-1/1 p-2 relative">
+          <?php if (has_post_thumbnail()) : ?>
+            <?php the_post_thumbnail('medium', ['class' => 'w-full h-[280px] min-[280px]:h-full object-cover rounded-lg']); ?>
+          <?php else : ?>
+            <img class="w-full h-[280px] object-cover rounded-lg" src="<?php echo get_template_directory_uri(); ?>/assets/images/placeholder.jpg" alt="Placeholder">
+          <?php endif; ?>
+        </figure>
+      </div>
+
+      <div class="w-full lg:w-2/3">
+        <div class="flex flex-col justify-center p-5 pl-3">
+          <div class="flex justify-between mb-1">
+            <header>
+              <div class="font-caveat text-xl font-medium text-sky-500">
+                <h3 class="text-black"><?php the_title(); ?>
+                  <?php if ($region_name) : ?>
+                    (<?php echo esc_html($region_name); ?>)
+                  <?php endif; ?>
+                </h3>
+
+                <div class="item_categories mb-2 mt-2">
+                  <?php foreach ($activity_terms as $term) : ?>
+                    <span><?php echo esc_html($term->name);?></span>
+                  <?php endforeach; ?>
+                </div>
+
+                <?php if (!empty($location)) : ?>
+                  <span class="location text-sm text-gray-500"><?php echo esc_html($location); ?></span>
+                <?php endif; ?>
+
+                <div x-data="{ expanded: false }">
+                  <p class="widget_text_teaser my-2">
+                    <span x-show="!expanded">
+                      <?php echo wp_trim_words(get_the_excerpt(), 25, '...'); ?>
+                    </span>
+                    <span x-show="expanded">
+                      <?php echo get_the_excerpt(); ?>
+                    </span>
+                  </p>
+                  <div class="border-dashed h-1 border-t border-color"></div>
+                  <div class="text-right mt-2">
+                    <button
+                      class="read_more read_moreaaaa no-underline text-black focus:outline-none"
+                      @click="expanded = !expanded"
+                      x-text="expanded ? 'Read Less ↑' : 'Read More ↓'"
+                    ></button>
                   </div>
-                </header>
+                </div>
               </div>
-            </div>
+            </header>
           </div>
         </div>
-        <div class="flex flex-wrap lg:flex-nowrap">
-          <div class="basis-1/3">
-            <figure class="min-[280px]:w-1/1 p-2 relative">
-              <img
-                class="w-full h-[280px] min-[280px]:h-full object-cover rounded-lg"
-                width="180"
-                height="180"
-                src="<?php echo get_template_directory_uri(); ?>/assets/images/kecak.webp"
-                alt="Tab 01"
-              />
-            </figure>
-          </div>
-          <div class="w-full lg:w-2/3">
-            <div class="flex flex-col justify-center p-5 pl-3">
-              <div class="flex justify-between mb-1">
-                <header>
-                  <div class="font-caveat text-xl font-medium text-sky-500">
-                    <h3 class="text-black">Kecak Fire Dance (Uluwatu)</h3>
-                    <div class="item_categories mb-2 mt-2">
-                      <span class="">Culture</span>
-                    </div>
-                    <span class="location text-sm text-gray-500"
-                      >Uluwatu Temple</span
-                    >
-                    <p class="widget_text_teaser my-2">
-                      Right next to the Uluwatu temple, at sunset a traditional
-                      Kecak Fire Dance is performed by local Balinese people.
-                      After exploring the temple, you could stay for this
-                      spectacular fire dance show.
-                    </p>
-                    <div class="border-dashed h-1 border-t border-color"></div>
-                    <a
-                      class="read_more read_moreaaaa text-right no-underline text-black block"
-                      href="#"
-                      >Read More ↓</a
-                    >
-                  </div>
-                </header>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="flex flex-wrap lg:flex-nowrap">
-          <div class="basis-1/3">
-            <figure class="min-[280px]:w-1/1 p-2 relative">
-              <img
-                class="w-full h-[280px] min-[280px]:h-full object-cover rounded-lg"
-                width="180"
-                height="180"
-                src="<?php echo get_template_directory_uri(); ?>/assets/images/kelingking.webp"
-                alt="Tab 01"
-              />
-            </figure>
-          </div>
-          <div class="w-full lg:w-2/3">
-            <div class="flex flex-col justify-center p-5 pl-3">
-              <div class="flex justify-between mb-1">
-                <header>
-                  <div class="font-caveat text-xl font-medium text-sky-500">
-                    <h3 class="text-black">
-                      Kelingking Beach (Nusa Penida Island)
-                    </h3>
-                    <div class="item_categories mb-2 mt-2">
-                      <span class="">Active</span><span>Nature</span
-                      ><span>Beach</span>
-                    </div>
-                    <span class="location text-sm text-gray-500"
-                      >South Nusa Penida</span
-                    >
-                    <p class="widget_text_teaser my-2">
-                      Kelingking Beach is the main attraction on Nusa Penida.
-                      The unique shape of a ridge surrounded by the ocean makes
-                      it looks like a T-Rex. When you get to the top, you can
-                      see a fantastic view of this land...
-                    </p>
-                    <div class="border-dashed h-1 border-t border-color"></div>
-                    <a
-                      class="read_more read_moreaaaa text-right no-underline text-black block"
-                      href="#"
-                      >Read More ↓</a
-                    >
-                  </div>
-                </header>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="flex flex-wrap lg:flex-nowrap">
-          <div class="basis-1/3">
-            <figure class="min-[280px]:w-1/1 p-2 relative">
-              <img
-                class="w-full h-[280px] min-[280px]:h-full object-cover rounded-lg"
-                width="180"
-                height="180"
-                src="<?php echo get_template_directory_uri(); ?>/assets/images/amed-diving.webp"
-                alt="Tab 01"
-              />
-            </figure>
-          </div>
-          <div class="w-full lg:w-2/3">
-            <div class="flex flex-col justify-center p-5 pl-3">
-              <div class="flex justify-between mb-1">
-                <header>
-                  <div class="font-caveat text-xl font-medium text-sky-500">
-                    <h3 class="text-black">Learn to dive together (Amed)</h3>
-                    <div class="item_categories mb-2 mt-2">
-                      <span class="">Active</span><span>Nature</span
-                      ><span>Thrill</span>
-                    </div>
-                    <span class="location text-sm text-gray-500"
-                      >Many dive shops all around Amed town</span
-                    >
-                    <p class="widget_text_teaser my-2">
-                      Amed has amazing diving spots with spectacular coral reefs
-                      and magnificent underwater life. As mentioned earlier in
-                      the article, there are famous diving spots such as the US
-                      Liberty Shipwreck, The Drop Off and the Japanese
-                      Shipwreck. Amed also has...
-                    </p>
-                    <div class="border-dashed h-1 border-t border-color"></div>
-                    <a
-                      class="read_more read_moreaaaa text-right no-underline text-black block"
-                      href="#"
-                      >Read More ↓</a
-                    >
-                  </div>
-                </header>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="flex flex-wrap lg:flex-nowrap">
-          <div class="basis-1/3">
-            <figure class="min-[280px]:w-1/1 p-2 relative">
-              <img
-                class="w-full h-[280px] min-[280px]:h-full object-cover rounded-lg"
-                width="180"
-                height="180"
-                src="<?php echo get_template_directory_uri(); ?>/assets/images/the_istana.webp"
-                alt="Tab 01"
-              />
-            </figure>
-          </div>
-          <div class="w-full lg:w-2/3">
-            <div class="flex flex-col justify-center p-5 pl-3">
-              <div class="flex justify-between mb-1">
-                <header>
-                  <div class="font-caveat text-xl font-medium text-sky-500">
-                    <h3 class="text-black">Istana Spa & Sunset (Uluwatu)</h3>
-                    <div class="item_categories mb-2 mt-2">
-                      <span class="">Relaxing & wellness</span
-                      ><span>Uluwatu</span>
-                    </div>
-                    <span class="location text-sm text-gray-500">Uluwatu</span>
-                    <p class="widget_text_teaser my-2">
-                      Our favorite sauna in all of Bali. When we were living in
-                      Canggu we would sometimes drive the whole 1.5 hour way
-                      down to Uluwatu just to enjoy an afternoon of relaxation
-                      here. Book this place in advance, you won't...
-                    </p>
-                    <div class="border-dashed h-1 border-t border-color"></div>
-                    <a
-                      class="read_more read_moreaaaa text-right no-underline text-black block"
-                      href="#"
-                      >Read More ↓</a
-                    >
-                  </div>
-                </header>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="flex flex-wrap lg:flex-nowrap">
-          <div class="basis-1/3">
-            <figure class="min-[280px]:w-1/1 p-2 relative">
-              <img
-                class="w-full h-[280px] min-[280px]:h-full object-cover rounded-lg"
-                width="180"
-                height="180"
-                src="<?php echo get_template_directory_uri(); ?>/assets/images/la-plancha.webp"
-                alt="Tab 01"
-              />
-            </figure>
-          </div>
-          <div class="w-full lg:w-2/3">
-            <div class="flex flex-col justify-center p-5 pl-3">
-              <div class="flex justify-between mb-1">
-                <header>
-                  <div class="font-caveat text-xl font-medium text-sky-500">
-                    <h3 class="text-black">Istana Spa & Sunset (Uluwatu)</h3>
-                    <div class="item_categories mb-2 mt-2">
-                      <span class="">Beach</span><span>Nightlife</span>
-                      <span>Sunset</span>
-                    </div>
-                    <span class="location text-sm text-gray-500"
-                      >Double Six Beach, South Seminyak</span
-                    >
-                    <p class="widget_text_teaser my-2">
-                      Colorful beach bar with a unique vibe. Enjoy the sun
-                      setting over the Indian Ocean while a DJ plays some
-                      relaxed tunes. Make sure to get here by 5:30 pm to secure
-                      a seat for you and your partner for sunset around 6-7PM.
-                    </p>
-                  </div>
-                </header>
-              </div>
-            </div>
-          </div>
-        </div>
+      </div>
+    </div>
+  <?php
+  endwhile;
+  wp_reset_postdata();
+else :
+  echo '<p>No activities found.</p>';
+endif;
+?>
         <p class="mt-3">
           <strong
             >Check out our full list of

@@ -644,10 +644,6 @@ aside {
   border-color: #fff;
 }
 
-.border-black {
-  border-color: #000;
-}
-
 .bg-yellow {
   background-color: #ffe31d;
 }
@@ -1043,6 +1039,10 @@ header ul li:hover {
   margin-top: 2.25rem;
 }
 
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
 .block {
   display: block;
 }
@@ -1314,11 +1314,6 @@ header ul li:hover {
 
 .border-dotted {
   border-style: dotted;
-}
-
-.border-black {
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
 }
 
 .border-gray-200 {
@@ -1714,6 +1709,11 @@ header ul li:hover {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+.text-blue-600 {
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity, 1));
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -1915,6 +1915,11 @@ header ul i {
 .focus\:border-blue-500:focus {
   --tw-border-opacity: 1;
   border-color: rgb(59 130 246 / var(--tw-border-opacity, 1));
+}
+
+.focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 .focus\:ring-blue-500:focus {

@@ -216,6 +216,14 @@ function theme_enqueue_scripts() {
 		null,
 		true // Load in footer
 	);
+	// alpinejs
+	wp_enqueue_script(
+		'alpinejs',
+		'https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js',
+		array('jquery'), // jQuery dependency
+		null,
+		true // Load in footer
+	);
 	// Enqueue app.js
 wp_enqueue_script(
     'app-js',
