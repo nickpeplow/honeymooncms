@@ -902,6 +902,10 @@ header ul li:hover {
   grid-column: span 2 / span 2;
 }
 
+.col-span-10 {
+  grid-column: span 10 / span 10;
+}
+
 .m-auto {
   margin: auto;
 }
@@ -1185,6 +1189,10 @@ header ul li:hover {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.grid-cols-12 {
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -1368,6 +1376,11 @@ header ul li:hover {
 }
 
 .bg-brown {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 238 222 / var(--tw-bg-opacity, 1));
+}
+
+.bg-info {
   --tw-bg-opacity: 1;
   background-color: rgb(255 238 222 / var(--tw-bg-opacity, 1));
 }
