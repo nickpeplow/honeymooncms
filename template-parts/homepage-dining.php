@@ -70,218 +70,84 @@
           <strong>favorite honeymoon restaurants in Bali</strong>, these would
           be our picks:
         </p>
-        <div class="flex flex-wrap lg:flex-nowrap">
-          <div class="basis-1/3">
-            <figure class="min-[280px]:w-1/1 p-2 relative">
-              <img
-                class="w-full h-[280px] min-[280px]:h-full object-cover rounded-lg"
-                width="180"
-                height="180"
-                src="<?php echo get_template_directory_uri(); ?>/assets/images/syrco-base.webp"
-                alt="Tab 01"
-              />
-            </figure>
-          </div>
-          <div class="w-full lg:w-2/3">
-            <div class="flex flex-col justify-center p-5 pl-3">
-              <div class="flex justify-between mb-1">
-                <header>
-                  <div class="font-caveat text-xl font-medium text-sky-500">
-                    <h3 class="text-black">Syrco BASÈ</h3>
-                    <div class="item_categories mb-2 mt-2">
-                      <span class="">Fine dining</span>
-                    </div>
-                    <span class="location text-sm text-gray-500"
-                      >10 min drive north of Ubud</span
-                    >
-                    <p class="widget_text_teaser my-2">
-                      We think this is is the best fine dining experience in
-                      Ubud. Syrco BASÈ newly opened in early 2024 by a chef who
-                      was earlier awarded 2 Michelin stars leading a restaurant
-                      in The Netherlands. Unfortunately Michelin does not
-                      rate...
-                    </p>
-                    <div class="border-dashed h-1 border-t border-color"></div>
-                    <a
-                      class="read_more read_moreaaaa text-right no-underline text-black block"
-                      href="#"
-                      >Read More ↓</a
-                    >
+        <?php
+$args = array(
+  'post_type' => 'restaurant',
+  'posts_per_page' => -1,
+);
+
+$restaurant_query = new WP_Query($args);
+
+if ($restaurant_query->have_posts()) :
+  while ($restaurant_query->have_posts()) : $restaurant_query->the_post();
+    $restaurant_terms = wp_get_post_terms(get_the_ID(), 'restaurant_restaurant_type'); // Change taxonomy name if different
+    $region_terms = wp_get_post_terms(get_the_ID(), 'restaurant_regions'); // Replace with your actual region taxonomy
+    $region_name = !empty($region_terms) ? $region_terms[0]->name : '';
+    $location = get_field('location'); // ACF field (optional)
+    ?>
+    <div class="flex flex-wrap lg:flex-nowrap mb-6">
+      <div class="basis-1/3">
+        <figure class="min-[280px]:w-1/1 p-2 relative">
+          <?php if (has_post_thumbnail()) : ?>
+            <?php the_post_thumbnail('medium', ['class' => 'w-full h-[280px] min-[280px]:h-full object-cover rounded-lg']); ?>
+          <?php else : ?>
+            <img class="w-full h-[280px] object-cover rounded-lg" src="<?php echo get_template_directory_uri(); ?>/assets/images/placeholder.jpg" alt="Placeholder">
+          <?php endif; ?>
+        </figure>
+      </div>
+
+      <div class="w-full lg:w-2/3">
+        <div class="flex flex-col justify-center p-5 pl-3">
+          <div class="flex justify-between mb-1">
+            <header>
+              <div class="font-caveat text-xl font-medium text-sky-500">
+                <h3 class="text-black"><?php the_title(); ?>
+                  <?php if ($region_name) : ?>
+                    (<?php echo esc_html($region_name); ?>)
+                  <?php endif; ?>
+                </h3>
+
+                <div class="item_categories mb-2 mt-2">
+                  <?php foreach ($restaurant_terms as $term) : ?>
+                    <span><?php echo esc_html($term->name); ?></span>
+                  <?php endforeach; ?>
+                </div>
+
+                <?php if (!empty($location)) : ?>
+                  <span class="location text-sm text-gray-500"><?php echo esc_html($location); ?></span>
+                <?php endif; ?>
+
+                <div x-data="{ expanded: false }">
+                  <p class="widget_text_teaser my-2">
+                    <span x-show="!expanded">
+                      <?php echo wp_trim_words(get_the_excerpt(), 25, '...'); ?>
+                    </span>
+                    <span x-show="expanded">
+                      <?php echo get_the_excerpt(); ?>
+                    </span>
+                  </p>
+                  <div class="border-dashed h-1 border-t border-color"></div>
+                  <div class="text-right mt-2">
+                    <button
+                      class="read_more read_moreaaaa no-underline text-black focus:outline-none"
+                      @click="expanded = !expanded"
+                      x-text="expanded ? 'Read Less ↑' : 'Read More ↓'"
+                    ></button>
                   </div>
-                </header>
+                </div>
               </div>
-            </div>
+            </header>
           </div>
         </div>
-        <div class="flex flex-wrap lg:flex-nowrap">
-          <div class="basis-1/3">
-            <figure class="min-[280px]:w-1/1 p-2 relative">
-              <img
-                class="w-full h-[280px] min-[280px]:h-full object-cover rounded-lg"
-                width="180"
-                height="180"
-                src="<?php echo get_template_directory_uri(); ?>/assets/images/4197-1740378931.webp"
-                alt="Tab 01"
-              />
-            </figure>
-          </div>
-          <div class="w-full lg:w-2/3">
-            <div class="flex flex-col justify-center p-5 pl-3">
-              <div class="flex justify-between mb-1">
-                <header>
-                  <div class="font-caveat text-xl font-medium text-sky-500">
-                    <h3 class="text-black">The Cave (Uluwatu)</h3>
-                    <div class="item_categories mb-2 mt-2">
-                      <span class="">Fine dining</span>
-                    </div>
-                    <span class="location text-sm text-gray-500"
-                      >Pecatu, 20 mins from Uluwatu</span
-                    >
-                    <p class="widget_text_teaser my-2">
-                      The most spectacular fine dining experience you will find
-                      in Bali, in a real natural cave! We've been at The Cave
-                      and loved it, but its one of the more fancy and expensive
-                      fine dining experiences in Bali. You will...
-                    </p>
-                    <div class="border-dashed h-1 border-t border-color"></div>
-                    <a
-                      class="read_more read_moreaaaa text-right no-underline text-black block"
-                      href="#"
-                      >Read More ↓</a
-                    >
-                  </div>
-                </header>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="flex flex-wrap lg:flex-nowrap">
-          <div class="basis-1/3">
-            <figure class="min-[280px]:w-1/1 p-2 relative">
-              <img
-                class="w-full h-[280px] min-[280px]:h-full object-cover rounded-lg"
-                width="180"
-                height="180"
-                src="<?php echo get_template_directory_uri(); ?>/assets/images/7864-1736507099.webp"
-                alt="Tab 01"
-              />
-            </figure>
-          </div>
-          <div class="w-full lg:w-2/3">
-            <div class="flex flex-col justify-center p-5 pl-3">
-              <div class="flex justify-between mb-1">
-                <header>
-                  <div class="font-caveat text-xl font-medium text-sky-500">
-                    <h3 class="text-black">Apéritif Restaurant</h3>
-                    <div class="item_categories mb-2 mt-2">
-                      <span class="">Fine dining</span>
-                    </div>
-                    <span class="location text-sm text-gray-500"
-                      >Viceroy Hotel, North-East Ubud</span
-                    >
-                    <p class="widget_text_teaser my-2">
-                      Apéritif, part of the 5-star Viceroy Hotel in Ubud, is
-                      situated in an impressive colonial-style building with
-                      large Balinese art displayed on the walls. When we walked
-                      in Jazz was playing in the background and all the staff
-                      was dressed...
-                    </p>
-                    <div class="border-dashed h-1 border-t border-color"></div>
-                    <a
-                      class="read_more read_moreaaaa text-right no-underline text-black block"
-                      href="#"
-                      >Read More ↓</a
-                    >
-                  </div>
-                </header>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="flex flex-wrap lg:flex-nowrap">
-          <div class="basis-1/3">
-            <figure class="min-[280px]:w-1/1 p-2 relative">
-              <img
-                class="w-full h-[280px] min-[280px]:h-full object-cover rounded-lg"
-                width="180"
-                height="180"
-                src="<?php echo get_template_directory_uri(); ?>/assets/images/7712-1742693068.webp"
-                alt="Tab 01"
-              />
-            </figure>
-          </div>
-          <div class="w-full lg:w-2/3">
-            <div class="flex flex-col justify-center p-5 pl-3">
-              <div class="flex justify-between mb-1">
-                <header>
-                  <div class="font-caveat text-xl font-medium text-sky-500">
-                    <h3 class="text-black">Locavore NXT</h3>
-                    <div class="item_categories mb-2 mt-2">
-                      <span class="">Fine dining</span><span>Viewpoint</span>
-                    </div>
-                    <span class="location text-sm text-gray-500"
-                      >15min south of Ubud</span
-                    >
-                    <p class="widget_text_teaser my-2">
-                      We were blown away by this experience - and we have tried
-                      a lot of fine dining in Bali! We stayed in one of their
-                      luxury wooden cabins overnight and experienced the full
-                      tour of the premise, where they grow...
-                    </p>
-                    <div class="border-dashed h-1 border-t border-color"></div>
-                    <a
-                      class="read_more read_moreaaaa text-right no-underline text-black block"
-                      href="#"
-                      >Read More ↓</a
-                    >
-                  </div>
-                </header>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="flex flex-wrap lg:flex-nowrap">
-          <div class="basis-1/3">
-            <figure class="min-[280px]:w-1/1 p-2 relative">
-              <img
-                class="w-full h-[280px] min-[280px]:h-full object-cover rounded-lg"
-                width="180"
-                height="180"
-                src="<?php echo get_template_directory_uri(); ?>/assets/images/8399-1726463821.webp"
-                alt="Tab 01"
-              />
-            </figure>
-          </div>
-          <div class="w-full lg:w-2/3">
-            <div class="flex flex-col justify-center p-5 pl-3">
-              <div class="flex justify-between mb-1">
-                <header>
-                  <div class="font-caveat text-xl font-medium text-sky-500">
-                    <h3 class="text-black">Sangsaka (Seminyak)</h3>
-                    <div class="item_categories mb-2 mt-2">
-                      <span class="">Fine dining</span><span>Indonesian</span>
-                    </div>
-                    <span class="location text-sm text-gray-500"
-                      >Central Seminyak, 5min drive inland</span
-                    >
-                    <p class="widget_text_teaser my-2">
-                      Sangsaka is a modern Indonesian restaurant offering one of
-                      the best tasting menus we have had in Bali, as well as à
-                      la carte options. Don't get confused with their website,
-                      it does not list the tasting menu but it...
-                    </p>
-                    <div class="border-dashed h-1 border-t border-color"></div>
-                    <a
-                      class="read_more read_moreaaaa text-right no-underline text-black block"
-                      href="#"
-                      >Read More ↓</a
-                    >
-                  </div>
-                </header>
-              </div>
-            </div>
-          </div>
-        </div>
+      </div>
+    </div>
+  <?php
+  endwhile;
+  wp_reset_postdata();
+else :
+  echo '<p>No restaurants found.</p>';
+endif;
+?>
         <p>
           For more restaurant ideas, check out our list of
           <a class="text-tertiary underline font-bold" href="#"
