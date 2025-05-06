@@ -54,595 +54,172 @@
 
     
             <!-- Tabs -->
-			<div class=" mb-4 bg-primary w-100 rounded-tl-lg rounded-tr-lg  pb-3">
+            <div class="mb-4 bg-primary w-100 rounded-tl-lg rounded-tr-lg pb-3">
         <p class="text-center font-bold p-3">What are you looking for?</p>
-       <ul class="tabs" class="inline-flex pt-2 px-1 w-full gap-2 justify-center flex-wrap">
-         <li class="px-3 pb-1 rounded-lg bg-white active-tab"><a id="default-tab" href="#eleven" class="text-sm font-bold"> All Itineraries</a></li>
-         <li class="px-3 pb-1 rounded-lg bg-white"><a href="#twelve" class="text-sm  font-bold ">7-day</a></li>
-         <li class="px-3 pb-1 rounded-lg bg-white border-black"><a href="#thirteen" class="text-sm  font-bold ">  10-day</a></li>
-         <li class="px-3 pb-1 rounded-lg bg-white"><a href="#fourteen" class="text-sm  font-bold ">12-day</a></li>
-   <li class="px-3 pb-1 rounded-lg bg-white"><a href="#fifteen" class="text-sm  font-bold ">14-day</a></li>
-<li class="px-3 pb-1 rounded-lg bg-white"><a href="#sixteen" class="text-sm  font-bold ">Amed</a></li>
-<li class="px-3 pb-1 rounded-lg bg-white"><a href="#seventeen" class="text-sm  font-bold ">Canggu</a></li>
- <li class="px-3 pb-1 rounded-lg bg-white"><a href="#eighteen" class="text-sm  font-bold ">Gili islands</a></li>
-   <li class="px-3 pb-1 rounded-lg bg-white"><a href="#nineteen" class="text-sm  font-bold ">Mount batur</a></li>
-  <li class="px-3 pb-1 rounded-lg bg-white"><a href="#twenty" class="text-sm  font-bold "> Munduk</a></li>
-   <li class="px-3 pb-1 rounded-lg bg-white"><a href="#twenty1" class="text-sm  font-bold ">Nusa dua</a></li>
-    <li class="px-3 pb-1 rounded-lg bg-white"><a href="#twenty2" class="text-sm  font-bold ">Nusa penida island</a></li>
-     <li class="px-3 pb-1 rounded-lg bg-white"><a href="#twenty3" class="text-sm  font-bold "> Seminyak</a></li>
-    <li class="px-3 pb-1 rounded-lg bg-white"><a href="#twenty4" class="text-sm  font-bold ">Sidemen</a></li>
-     <li class="px-3 pb-1 rounded-lg bg-white"><a href="#twenty5" class="text-sm  font-bold "> Ubud</a></li>
-      <li class="px-3 pb-1 rounded-lg bg-white"><a href="#twenty6" class="text-sm  font-bold "> Uluwatu</a></li>
-       </ul>
-     </div>      
-       <!-- Tab Contents -->   
-       <div class="tab-contents">
-         <div id="eleven" class="py-3">
-             <div class="flex">
-                     <div class="basis-1/3">
-                       <figure class="min-[280px]:w-1/1 p-2 relative">
-                         <img class="w-full h-[280px] min-[280px]:h-full object-cover rounded-lg" width="180" height="180" src="<?php echo get_template_directory_uri(); ?>/assets/images/7-day_classic_itinerary_small.webp" alt="Tab 01">
-                         <div class="widget_fav absolute bg-yellow top-9 text-sm px-2 py-1">
-                           ★ Our Fav!
-                         </div>
-                       </figure>
-                     </div>
-                     <div class="basis-2/3">
-                       <div class="flex flex-col justify-center p-5 pl-3">
-                         <div class="flex justify-between mb-1">
-                           <header>
-                             <div class="font-caveat text-xl font-medium text-sky-500">
-                               <h3 class="text-black">Ubud</h3>
-                               <div class="item_categories">
-                                 <span class="">Luxury</span><span>Culture</span><span>Nature</span><span>Nightlife</span>
-                               </div>
-                               <p class="widget_text_teaser my-3">
-                                 Made famous by Eat Pray Love. Jungle, art, rice
-                                 fields, monkeys and spirituality.
-                               </p>
-                               <a class="read_more read_moreaaaa" href="/regions/ubud-honeymoon/">Read our Ubud Honeymoon Guide</a>
-                             </div>
-                           </header>
-                         </div>
-                       </div>
-                     </div>
-                   </div>
-          <div class="flex">
-           <div class="basis-1/3">
-             <figure class="min-[280px]:w-1/1 p-2 relative">
-               <img class="w-full h-[280px] min-[280px]:h-full object-cover rounded-lg" width="180" height="180" src="<?php echo get_template_directory_uri(); ?>/assets/images/7-day_classic_itinerary_small.webp" alt="Tab 01">
-               <div class="widget_fav absolute bg-yellow top-9 text-sm px-2 py-1">
-                 ★ Our Fav!
-               </div>
-             </figure>
-           </div>
-           <div class="basis-2/3">
-             <div class="flex flex-col justify-center p-5 pl-3">
-               <div class="flex justify-between mb-1">
-                 <header>
-                   <div class="font-caveat text-xl font-medium text-sky-500">
-                     <h3 class="text-black">Uluwatu</h3>
-                     <div class="item_categories">
-                       <span class="">Luxury</span><span>Culture</span><span>Nature</span><span>Nightlife</span>
-                     </div>
-                     <p class="widget_text_teaser my-3">
-                       Made famous by Eat Pray Love. Jungle, art, rice
-                       fields, monkeys and spirituality.
-                     </p>
-                     <a class="read_more read_moreaaaa" href="/regions/ubud-honeymoon/">Read our Ubud Honeymoon Guide</a>
-                   </div>
-                 </header>
-               </div>
-             </div>
-           </div>
-         </div>
-         <div class="flex">
-           <div class="basis-1/3">
-             <figure class="min-[280px]:w-1/1 p-2 relative">
-               <img class="w-full h-[280px] min-[280px]:h-full object-cover rounded-lg" width="180" height="180" src="<?php echo get_template_directory_uri(); ?>/assets/images/7-day_classic_itinerary_small.webp" alt="Tab 01">
-               <div class="widget_fav absolute bg-yellow top-9 text-sm px-2 py-1">
-                 ★ Our Fav!
-               </div>
-             </figure>
-           </div>
-           <div class="basis-2/3">
-             <div class="flex flex-col justify-center p-5 pl-3">
-               <div class="flex justify-between mb-1">
-                 <header>
-                   <div class="font-caveat text-xl font-medium text-sky-500">
-                     <h3 class="text-black">Munduk</h3>
-                     <div class="item_categories">
-                       <span class="">Luxury</span><span>Culture</span><span>Nature</span><span>Nightlife</span>
-                     </div>
-                     <p class="widget_text_teaser my-3">
-                       Made famous by Eat Pray Love. Jungle, art, rice
-                       fields, monkeys and spirituality.
-                     </p>
-                     <a class="read_more read_moreaaaa" href="/regions/ubud-honeymoon/">Read our Ubud Honeymoon Guide</a>
-                   </div>
-                 </header>
-               </div>
-             </div>
-           </div>
-         </div>
-         <div class="flex">
-           <div class="basis-1/3">
-             <figure class="min-[280px]:w-1/1 p-2 relative">
-               <img class="w-full h-[280px] min-[280px]:h-full object-cover rounded-lg" width="180" height="180" src="<?php echo get_template_directory_uri(); ?>/assets/images/7-day_classic_itinerary_small.webp" alt="Tab 01">
-             </figure>
-           </div>
-           <div class="basis-2/3">
-             <div class="flex flex-col justify-center p-5 pl-3">
-               <div class="flex justify-between mb-1">
-                 <header>
-                   <div class="font-caveat text-xl font-medium text-sky-500">
-                     <h3 class="text-black">Seminyak</h3>
-                     <div class="item_categories">
-                       <span class="">Luxury</span><span>Culture</span><span>Nature</span><span>Nightlife</span>
-                     </div>
-                     <p class="widget_text_teaser my-3">
-                       Made famous by Eat Pray Love. Jungle, art, rice
-                       fields, monkeys and spirituality.
-                     </p>
-                     <a class="read_more read_moreaaaa" href="/regions/ubud-honeymoon/">Read our Ubud Honeymoon Guide</a>
-                   </div>
-                 </header>
-               </div>
-             </div>
-           </div>
-         </div>
-         </div>
-         <div id="twelve" class="hidden py-3">
-                <div class="flex">
-           <div class="basis-1/3">
-             <figure class="min-[280px]:w-1/1 p-2 relative">
-               <img class="w-full h-[280px] min-[280px]:h-full object-cover rounded-lg" width="180" height="180" src="<?php echo get_template_directory_uri(); ?>/assets/images/7-day_classic_itinerary_small.webp" alt="Tab 01">
-             </figure>
-           </div>
-           <div class="basis-2/3">
-             <div class="flex flex-col justify-center p-5 pl-3">
-               <div class="flex justify-between mb-1">
-                 <header>
-                   <div class="font-caveat text-xl font-medium text-sky-500">
-                     <h3 class="text-black">Nusa Dua</h3>
-                     <div class="item_categories">
-                       <span class="">Luxury</span><span>Culture</span><span>Nature</span><span>Nightlife</span>
-                     </div>
-                     <p class="widget_text_teaser my-3">
-                       Made famous by Eat Pray Love. Jungle, art, rice
-                       fields, monkeys and spirituality.
-                     </p>
-                     <a class="read_more read_moreaaaa" href="/regions/ubud-honeymoon/">Read our Ubud Honeymoon Guide</a>
-                   </div>
-                 </header>
-               </div>
-             </div>
-           </div>
-         </div>
-         </div>
-         <div id="thirteen" class="hidden py-3">
-                <div class="flex">
-           <div class="basis-1/3">
-             <figure class="min-[280px]:w-1/1 p-2 relative">
-               <img class="w-full h-[280px] min-[280px]:h-full object-cover rounded-lg" width="180" height="180" src="<?php echo get_template_directory_uri(); ?>/assets/images/7-day_classic_itinerary_small.webp" alt="Tab 01">
-             </figure>
-           </div>
-           <div class="basis-2/3">
-             <div class="flex flex-col justify-center p-5 pl-3">
-               <div class="flex justify-between mb-1">
-                 <header>
-                   <div class="font-caveat text-xl font-medium text-sky-500">
-                     <h3 class="text-black">Ubud</h3>
-                     <div class="item_categories">
-                       <span class="">Luxury</span><span>Culture</span><span>Nature</span><span>Nightlife</span>
-                     </div>
-                     <p class="widget_text_teaser my-3">
-                       Made famous by Eat Pray Love. Jungle, art, rice
-                       fields, monkeys and spirituality.
-                     </p>
-                     <a class="read_more read_moreaaaa" href="/regions/ubud-honeymoon/">Read our Ubud Honeymoon Guide</a>
-                   </div>
-                 </header>
-               </div>
-             </div>
-           </div>
-         </div>
-         </div>
-         <div id="fourteen" class="hidden py-3">
-              <div class="flex">
-           <div class="basis-1/3">
-             <figure class="min-[280px]:w-1/1 p-2 relative">
-               <img class="w-full h-[280px] min-[280px]:h-full object-cover rounded-lg" width="180" height="180" src="<?php echo get_template_directory_uri(); ?>/assets/images/7-day_classic_itinerary_small.webp" alt="Tab 01">
-               <div class="widget_fav absolute bg-yellow top-9 text-sm px-2 py-1">
-                 ★ Our Fav!
-               </div>
-             </figure>
-           </div>
-           <div class="basis-2/3">
-             <div class="flex flex-col justify-center p-5 pl-3">
-               <div class="flex justify-between mb-1">
-                 <header>
-                   <div class="font-caveat text-xl font-medium text-sky-500">
-                     <h3 class="text-black">Nusa Dua</h3>
-                     <div class="item_categories">
-                       <span class="">Luxury</span><span>Culture</span><span>Nature</span><span>Nightlife</span>
-                     </div>
-                     <p class="widget_text_teaser my-3">
-                       Made famous by Eat Pray Love. Jungle, art, rice
-                       fields, monkeys and spirituality.
-                     </p>
-                     <a class="read_more read_moreaaaa" href="/regions/ubud-honeymoon/">Read our Ubud Honeymoon Guide</a>
-                   </div>
-                 </header>
-               </div>
-             </div>
-           </div>
-         </div>
-         </div>
-     <div id="fifteen" class="hidden py-3">
-             <div class="flex">
-           <div class="basis-1/3">
-             <figure class="min-[280px]:w-1/1 p-2 relative">
-               <img class="w-full h-[280px] min-[280px]:h-full object-cover rounded-lg" width="180" height="180" src="<?php echo get_template_directory_uri(); ?>/assets/images/7-day_classic_itinerary_small.webp" alt="Tab 01">
-             </figure>
-           </div>
-           <div class="basis-2/3">
-             <div class="flex flex-col justify-center p-5 pl-3">
-               <div class="flex justify-between mb-1">
-                 <header>
-                   <div class="font-caveat text-xl font-medium text-sky-500">
-                     <h3 class="text-black">Ubud</h3>
-                     <div class="item_categories">
-                       <span class="">Luxury</span><span>Culture</span><span>Nature</span><span>Nightlife</span>
-                     </div>
-                     <p class="widget_text_teaser my-3">
-                       Made famous by Eat Pray Love. Jungle, art, rice
-                       fields, monkeys and spirituality.
-                     </p>
-                     <a class="read_more read_moreaaaa" href="/regions/ubud-honeymoon/">Read our Ubud Honeymoon Guide</a>
-                   </div>
-                 </header>
-               </div>
-             </div>
-           </div>
-         </div>
-         </div>
-     <div id="sixteen" class="hidden py-3">
-               <div class="flex">
-           <div class="basis-1/3">
-             <figure class="min-[280px]:w-1/1 p-2 relative">
-               <img class="w-full h-[280px] min-[280px]:h-full object-cover rounded-lg" width="180" height="180" src="<?php echo get_template_directory_uri(); ?>/assets/images/7-day_classic_itinerary_small.webp" alt="Tab 01">
-               <div class="widget_fav absolute bg-yellow top-9 text-sm px-2 py-1">
-                 ★ Our Fav!
-               </div>
-             </figure>
-           </div>
-           <div class="basis-2/3">
-             <div class="flex flex-col justify-center p-5 pl-3">
-               <div class="flex justify-between mb-1">
-                 <header>
-                   <div class="font-caveat text-xl font-medium text-sky-500">
-                     <h3 class="text-black">Nusa Dua</h3>
-                     <div class="item_categories">
-                       <span class="">Luxury</span><span>Culture</span><span>Nature</span><span>Nightlife</span>
-                     </div>
-                     <p class="widget_text_teaser my-3">
-                       Made famous by Eat Pray Love. Jungle, art, rice
-                       fields, monkeys and spirituality.
-                     </p>
-                     <a class="read_more read_moreaaaa" href="#">Read our Ubud Honeymoon Guide</a>
-                   </div>
-                 </header>
-               </div>
-             </div>
-           </div>
-         </div>
-         </div>
-     <div id="seventeen" class="hidden py-3">
-               <div class="flex">
-           <div class="basis-1/3">
-             <figure class="min-[280px]:w-1/1 p-2 relative">
-               <img class="w-full h-[280px] min-[280px]:h-full object-cover rounded-lg" width="180" height="180" src="<?php echo get_template_directory_uri(); ?>/assets/images/7-day_classic_itinerary_small.webp" alt="Tab 01">
-             </figure>
-           </div>
-           <div class="basis-2/3">
-             <div class="flex flex-col justify-center p-5 pl-3">
-               <div class="flex justify-between mb-1">
-                 <header>
-                   <div class="font-caveat text-xl font-medium text-sky-500">
-                     <h3 class="text-black">Ubud</h3>
-                     <div class="item_categories">
-                       <span class="">Luxury</span><span>Culture</span><span>Nature</span><span>Nightlife</span>
-                     </div>
-                     <p class="widget_text_teaser my-3">
-                       Made famous by Eat Pray Love. Jungle, art, rice
-                       fields, monkeys and spirituality.
-                     </p>
-                     <a class="read_more read_moreaaaa" href="#">Read our Ubud Honeymoon Guide</a>
-                   </div>
-                 </header>
-               </div>
-             </div>
-           </div>
-         </div>
-         </div>
-     <div id="eighteen" class="hidden py-3">
-          <div class="flex">
-           <div class="basis-1/3">
-             <figure class="min-[280px]:w-1/1 p-2 relative">
-               <img class="w-full h-[280px] min-[280px]:h-full object-cover rounded-lg" width="180" height="180" src="<?php echo get_template_directory_uri(); ?>/assets/images/7-day_classic_itinerary_small.webp" alt="Tab 01">
-               <div class="widget_fav absolute bg-yellow top-9 text-sm px-2 py-1">
-                 ★ Our Fav!
-               </div>
-             </figure>
-           </div>
-           <div class="basis-2/3">
-             <div class="flex flex-col justify-center p-5 pl-3">
-               <div class="flex justify-between mb-1">
-                 <header>
-                   <div class="font-caveat text-xl font-medium text-sky-500">
-                     <h3 class="text-black">Nusa Dua</h3>
-                     <div class="item_categories">
-                       <span class="">Luxury</span><span>Culture</span><span>Nature</span><span>Nightlife</span>
-                     </div>
-                     <p class="widget_text_teaser my-3">
-                       Made famous by Eat Pray Love. Jungle, art, rice
-                       fields, monkeys and spirituality.
-                     </p>
-                     <a class="read_more read_moreaaaa" href="#">Read our Ubud Honeymoon Guide</a>
-                   </div>
-                 </header>
-               </div>
-             </div>
-           </div>
-         </div>
-         </div>
-     <div id="nineteen" class="hidden py-3">
-          <div class="flex">
-           <div class="basis-1/3">
-             <figure class="min-[280px]:w-1/1 p-2 relative">
-               <img class="w-full h-[280px] min-[280px]:h-full object-cover rounded-lg" width="180" height="180" src="<?php echo get_template_directory_uri(); ?>/assets/images/7-day_classic_itinerary_small.webp" alt="Tab 01">
-             </figure>
-           </div>
-           <div class="basis-2/3">
-             <div class="flex flex-col justify-center p-5 pl-3">
-               <div class="flex justify-between mb-1">
-                 <header>
-                   <div class="font-caveat text-xl font-medium text-sky-500">
-                     <h3 class="text-black">Ubud</h3>
-                     <div class="item_categories">
-                       <span class="">Luxury</span><span>Culture</span><span>Nature</span><span>Nightlife</span>
-                     </div>
-                     <p class="widget_text_teaser my-3">
-                       Made famous by Eat Pray Love. Jungle, art, rice
-                       fields, monkeys and spirituality.
-                     </p>
-                     <a class="read_more read_moreaaaa" href="#">Read our Ubud Honeymoon Guide</a>
-                   </div>
-                 </header>
-               </div>
-             </div>
-           </div>
-         </div>
-         </div>
-     <div id="twenty" class="hidden py-3">
-             <div class="flex">
-           <div class="basis-1/3">
-             <figure class="min-[280px]:w-1/1 p-2 relative">
-               <img class="w-full h-[280px] min-[280px]:h-full object-cover rounded-lg" width="180" height="180" src="<?php echo get_template_directory_uri(); ?>/assets/images/7-day_classic_itinerary_small.webp" alt="Tab 01">
-               <div class="widget_fav absolute bg-yellow top-9 text-sm px-2 py-1">
-                 ★ Our Fav!
-               </div>
-             </figure>
-           </div>
-           <div class="basis-2/3">
-             <div class="flex flex-col justify-center p-5 pl-3">
-               <div class="flex justify-between mb-1">
-                 <header>
-                   <div class="font-caveat text-xl font-medium text-sky-500">
-                     <h3 class="text-black">Nusa Dua</h3>
-                     <div class="item_categories">
-                       <span class="">Luxury</span><span>Culture</span><span>Nature</span><span>Nightlife</span>
-                     </div>
-                     <p class="widget_text_teaser my-3">
-                       Made famous by Eat Pray Love. Jungle, art, rice
-                       fields, monkeys and spirituality.
-                     </p>
-                     <a class="read_more read_moreaaaa" href="#">Read our Ubud Honeymoon Guide</a>
-                   </div>
-                 </header>
-               </div>
-             </div>
-           </div>
-         </div>
-         </div>
-         <div id="twenty1" class="hidden py-3">
-             <div class="flex">
-           <div class="basis-1/3">
-             <figure class="min-[280px]:w-1/1 p-2 relative">
-               <img class="w-full h-[280px] min-[280px]:h-full object-cover rounded-lg" width="180" height="180" src="<?php echo get_template_directory_uri(); ?>/assets/images/7-day_classic_itinerary_small.webp" alt="Tab 01">
-               <div class="widget_fav absolute bg-yellow top-9 text-sm px-2 py-1">
-                 ★ Our Fav!
-               </div>
-             </figure>
-           </div>
-           <div class="basis-2/3">
-             <div class="flex flex-col justify-center p-5 pl-3">
-               <div class="flex justify-between mb-1">
-                 <header>
-                   <div class="font-caveat text-xl font-medium text-sky-500">
-                     <h3 class="text-black">Nusa Dua</h3>
-                     <div class="item_categories">
-                       <span class="">Luxury</span><span>Culture</span><span>Nature</span><span>Nightlife</span>
-                     </div>
-                     <p class="widget_text_teaser my-3">
-                       Made famous by Eat Pray Love. Jungle, art, rice
-                       fields, monkeys and spirituality.
-                     </p>
-                     <a class="read_more read_moreaaaa" href="#">Read our Ubud Honeymoon Guide</a>
-                   </div>
-                 </header>
-               </div>
-             </div>
-           </div>
-         </div>
-         </div>
-         <div id="twenty2" class="hidden py-3">
-             <div class="flex">
-           <div class="basis-1/3">
-             <figure class="min-[280px]:w-1/1 p-2 relative">
-               <img class="w-full h-[280px] min-[280px]:h-full object-cover rounded-lg" width="180" height="180" src="<?php echo get_template_directory_uri(); ?>/assets/images/7-day_classic_itinerary_small.webp" alt="Tab 01">
-               <div class="widget_fav absolute bg-yellow top-9 text-sm px-2 py-1">
-                 ★ Our Fav!
-               </div>
-             </figure>
-           </div>
-           <div class="basis-2/3">
-             <div class="flex flex-col justify-center p-5 pl-3">
-               <div class="flex justify-between mb-1">
-                 <header>
-                   <div class="font-caveat text-xl font-medium text-sky-500">
-                     <h3 class="text-black">Nusa Dua</h3>
-                     <div class="item_categories">
-                       <span class="">Luxury</span><span>Culture</span><span>Nature</span><span>Nightlife</span>
-                     </div>
-                     <p class="widget_text_teaser my-3">
-                       Made famous by Eat Pray Love. Jungle, art, rice
-                       fields, monkeys and spirituality.
-                     </p>
-                     <a class="read_more read_moreaaaa" href="#">Read our Ubud Honeymoon Guide</a>
-                   </div>
-                 </header>
-               </div>
-             </div>
-           </div>
-         </div>
-         </div>
-         <div id="twenty3" class="hidden py-3">
-             <div class="flex">
-           <div class="basis-1/3">
-             <figure class="min-[280px]:w-1/1 p-2 relative">
-               <img class="w-full h-[280px] min-[280px]:h-full object-cover rounded-lg" width="180" height="180" src="<?php echo get_template_directory_uri(); ?>/assets/images/7-day_classic_itinerary_small.webp" alt="Tab 01">
-               <div class="widget_fav absolute bg-yellow top-9 text-sm px-2 py-1">
-                 ★ Our Fav!
-               </div>
-             </figure>
-           </div>
-           <div class="basis-2/3">
-             <div class="flex flex-col justify-center p-5 pl-3">
-               <div class="flex justify-between mb-1">
-                 <header>
-                   <div class="font-caveat text-xl font-medium text-sky-500">
-                     <h3 class="text-black">Nusa Dua</h3>
-                     <div class="item_categories">
-                       <span class="">Luxury</span><span>Culture</span><span>Nature</span><span>Nightlife</span>
-                     </div>
-                     <p class="widget_text_teaser my-3">
-                       Made famous by Eat Pray Love. Jungle, art, rice
-                       fields, monkeys and spirituality.
-                     </p>
-                     <a class="read_more read_moreaaaa" href="#">Read our Ubud Honeymoon Guide</a>
-                   </div>
-                 </header>
-               </div>
-             </div>
-           </div>
-         </div>
-         </div>
-         <div id="twenty4" class="hidden py-3">
-             <div class="flex">
-           <div class="basis-1/3">
-             <figure class="min-[280px]:w-1/1 p-2 relative">
-               <img class="w-full h-[280px] min-[280px]:h-full object-cover rounded-lg" width="180" height="180" src="<?php echo get_template_directory_uri(); ?>/assets/images/7-day_classic_itinerary_small.webp" alt="Tab 01">
-               <div class="widget_fav absolute bg-yellow top-9 text-sm px-2 py-1">
-                 ★ Our Fav!
-               </div>
-             </figure>
-           </div>
-           <div class="basis-2/3">
-             <div class="flex flex-col justify-center p-5 pl-3">
-               <div class="flex justify-between mb-1">
-                 <header>
-                   <div class="font-caveat text-xl font-medium text-sky-500">
-                     <h3 class="text-black">Nusa Dua</h3>
-                     <div class="item_categories">
-                       <span class="">Luxury</span><span>Culture</span><span>Nature</span><span>Nightlife</span>
-                     </div>
-                     <p class="widget_text_teaser my-3">
-                       Made famous by Eat Pray Love. Jungle, art, rice
-                       fields, monkeys and spirituality.
-                     </p>
-                     <a class="read_more read_moreaaaa" href="#">Read our Ubud Honeymoon Guide</a>
-                   </div>
-                 </header>
-               </div>
-             </div>
-           </div>
-         </div>
-         </div>
-         <div id="twenty5" class="hidden py-3">
-             <div class="flex">
-           <div class="basis-1/3">
-             <figure class="min-[280px]:w-1/1 p-2 relative">
-               <img class="w-full h-[280px] min-[280px]:h-full object-cover rounded-lg" width="180" height="180" src="<?php echo get_template_directory_uri(); ?>/assets/images/7-day_classic_itinerary_small.webp" alt="Tab 01">
-               <div class="widget_fav absolute bg-yellow top-9 text-sm px-2 py-1">
-                 ★ Our Fav!
-               </div>
-             </figure>
-           </div>
-           <div class="basis-2/3">
-             <div class="flex flex-col justify-center p-5 pl-3">
-               <div class="flex justify-between mb-1">
-                 <header>
-                   <div class="font-caveat text-xl font-medium text-sky-500">
-                     <h3 class="text-black">Nusa Dua</h3>
-                     <div class="item_categories">
-                       <span class="">Luxury</span><span>Culture</span><span>Nature</span><span>Nightlife</span>
-                     </div>
-                     <p class="widget_text_teaser my-3">
-                       Made famous by Eat Pray Love. Jungle, art, rice
-                       fields, monkeys and spirituality.
-                     </p>
-                     <a class="read_more read_moreaaaa" href="#">Read our Ubud Honeymoon Guide</a>
-                   </div>
-                 </header>
-               </div>
-             </div>
-           </div>
-         </div>
-         </div>
-         <div id="twenty6" class="hidden py-3">
-             <div class="flex">
-           <div class="basis-1/3">
-             <figure class="min-[280px]:w-1/1 p-2 relative">
-               <img class="w-full h-[280px] min-[280px]:h-full object-cover rounded-lg" width="180" height="180" src="<?php echo get_template_directory_uri(); ?>/assets/images/7-day_classic_itinerary_small.webp" alt="Tab 01">
-               <div class="widget_fav absolute bg-yellow top-9 text-sm px-2 py-1">
-                 ★ Our Fav!
-               </div>
-             </figure>
-           </div>
-           <div class="basis-2/3">
-             <div class="flex flex-col justify-center p-5 pl-3">
-               <div class="flex justify-between mb-1">
-                 <header>
-                   <div class="font-caveat text-xl font-medium text-sky-500">
-                     <h3 class="text-black">Nusa Dua</h3>
-                     <div class="item_categories">
-                       <span class="">Luxury</span><span>Culture</span><span>Nature</span><span>Nightlife</span>
-                     </div>
-                     <p class="widget_text_teaser my-3">
-                       Made famous by Eat Pray Love. Jungle, art, rice
-                       fields, monkeys and spirituality.
-                     </p>
-                     <a class="read_more read_moreaaaa" href="#">Read our Ubud Honeymoon Guide</a>
-                   </div>
-                 </header>
-               </div>
-             </div>
-           </div>
-         </div>
-         </div>
-       </div>
+
+        <?php
+        $terms = get_terms(array(
+          'taxonomy'   => 'itineraries_itinerary_types',
+          'hide_empty' => false,
+        ));
+        ?>
+
+        <?php if (!empty($terms) && !is_wp_error($terms)) : ?>
+          <ul class="inline-flex pt-2 px-1 w-full gap-2 justify-center flex-wrap">
+            <li class="px-3 pb-1 rounded-lg bg-white active-tab">
+              <a id="default-tab" href="#eleven" class="text-sm font-bold">All Itineraries</a>
+            </li>
+            <?php foreach ($terms as $term) : ?>
+              <li class="px-3 pb-1 rounded-lg bg-white">
+                <a href="#<?php echo esc_attr($term->slug); ?>" class="text-sm font-bold">
+                  <?php echo esc_html($term->name); ?>
+                </a>
+              </li>
+            <?php endforeach; ?>
+          </ul>
+        <?php else : ?>
+          <p>No Itinerary Types found.</p>
+        <?php endif; ?>
+      </div>
+
+      <!-- Tab Contents -->
+      <div class="tab-contents">
+
+        <!-- All Itineraries (Default) -->
+        <div id="eleven" class="py-3">
+          <?php
+          $args = array(
+            'post_type' => 'itineraries',
+            'posts_per_page' => -1,
+          );
+          $itinerary_query = new WP_Query($args);
+
+          if ($itinerary_query->have_posts()) :
+            while ($itinerary_query->have_posts()) : $itinerary_query->the_post();
+
+              $itinerary_terms = wp_get_post_terms(get_the_ID(), 'itineraries_itinerary_types');
+              ?>
+              <div class="flex mb-6">
+                <div class="basis-1/3">
+                  <figure class="min-[280px]:w-1/1 p-2 relative">
+                    <?php if (has_post_thumbnail()) : ?>
+                      <?php the_post_thumbnail('medium', ['class' => 'w-full h-[280px] min-[280px]:h-full object-cover rounded-lg']); ?>
+                    <?php else : ?>
+                      <img class="w-full h-[280px] object-cover rounded-lg" src="<?php echo get_template_directory_uri(); ?>/assets/images/placeholder.jpg" alt="Placeholder">
+                    <?php endif; ?>
+
+                    <div class="widget_fav absolute bg-yellow top-9 text-sm px-2 py-1">
+                      ★ Our Fav!
+                    </div>
+                  </figure>
+                </div>
+
+                <div class="basis-2/3">
+                  <div class="flex flex-col justify-center p-5 pl-3">
+                    <div class="flex justify-between mb-1">
+                      <header>
+                        <div class="font-caveat text-xl font-medium text-sky-500">
+                          <h3 class="text-black"><?php the_title(); ?></h3>
+
+                          <div class="item_categories">
+                            <?php foreach ($itinerary_terms as $term) : ?>
+                              <span><?php echo esc_html($term->name); ?></span>
+                            <?php endforeach; ?>
+                          </div>
+
+                          <p class="widget_text_teaser my-3">
+                            <?php echo wp_trim_words(get_the_excerpt(), 20, '...'); ?>
+                          </p>
+
+                          <a class="read_more read_moreaaaa" href="<?php the_permalink(); ?>">
+                            Read our <?php the_title(); ?> Guide
+                          </a>
+                        </div>
+                      </header>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <?php endwhile;
+            wp_reset_postdata();
+          else :
+            echo '<p>No itineraries found.</p>';
+          endif;
+          ?>
+        </div>
+
+        <!-- Tab for each itinerary type -->
+        <?php foreach ($terms as $term) : ?>
+          <div id="<?php echo esc_attr($term->slug); ?>" class="py-3 hidden">
+            <?php
+            $args = array(
+              'post_type' => 'itineraries',
+              'posts_per_page' => -1,
+              'tax_query' => array(
+                array(
+                  'taxonomy' => 'itineraries_itinerary_types',
+                  'field'    => 'slug',
+                  'terms'    => $term->slug,
+                )
+              ),
+            );
+            $term_query = new WP_Query($args);
+
+            if ($term_query->have_posts()) :
+              while ($term_query->have_posts()) : $term_query->the_post();
+
+                $itinerary_terms = wp_get_post_terms(get_the_ID(), 'itineraries_itinerary_types');
+                ?>
+                <div class="flex mb-6">
+                  <div class="basis-1/3">
+                    <figure class="min-[280px]:w-1/1 p-2 relative">
+                      <?php if (has_post_thumbnail()) : ?>
+                        <?php the_post_thumbnail('medium', ['class' => 'w-full h-[280px] min-[280px]:h-full object-cover rounded-lg']); ?>
+                      <?php else : ?>
+                        <img class="w-full h-[280px] object-cover rounded-lg" src="<?php echo get_template_directory_uri(); ?>/assets/images/placeholder.jpg" alt="Placeholder">
+                      <?php endif; ?>
+
+                      <div class="widget_fav absolute bg-yellow top-9 text-sm px-2 py-1">
+                        ★ Our Fav!
+                      </div>
+                    </figure>
+                  </div>
+
+                  <div class="basis-2/3">
+                    <div class="flex flex-col justify-center p-5 pl-3">
+                      <div class="flex justify-between mb-1">
+                        <header>
+                          <div class="font-caveat text-xl font-medium text-sky-500">
+                            <h3 class="text-black"><?php the_title(); ?></h3>
+
+                            <div class="item_categories">
+                              <?php foreach ($itinerary_terms as $term) : ?>
+                                <span><?php echo esc_html($term->name); ?></span>
+                              <?php endforeach; ?>
+                            </div>
+
+                            <p class="widget_text_teaser my-3">
+                              <?php echo wp_trim_words(get_the_excerpt(), 20, '...'); ?>
+                            </p>
+
+                            <a class="read_more read_moreaaaa" href="<?php the_permalink(); ?>">
+                              Read our <?php the_title(); ?> Guide
+                            </a>
+                          </div>
+                        </header>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              <?php endwhile;
+              wp_reset_postdata();
+            else :
+              echo '<p>No itineraries found for ' . esc_html($term->name) . '</p>';
+            endif;
+            ?>
+          </div>
+        <?php endforeach; ?>
+      </div>
 		</div>
 	</div>
 </section>
