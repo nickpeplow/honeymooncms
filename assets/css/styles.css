@@ -898,16 +898,21 @@ header ul li:hover {
   z-index: 50;
 }
 
-.col-span-2 {
-  grid-column: span 2 / span 2;
-}
-
 .col-span-10 {
   grid-column: span 10 / span 10;
 }
 
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
 .m-auto {
   margin: auto;
+}
+
+.-mx-2 {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
 }
 
 .mx-1 {
@@ -948,11 +953,6 @@ header ul li:hover {
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
-}
-
-.-mx-2 {
-  margin-left: -0.5rem;
-  margin-right: -0.5rem;
 }
 
 .-ms-3 {
@@ -1181,16 +1181,16 @@ header ul li:hover {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.grid-cols-12 {
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.grid-cols-12 {
-  grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -1336,6 +1336,11 @@ header ul li:hover {
   border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
 }
 
+.bg-brown {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 238 222 / var(--tw-bg-opacity, 1));
+}
+
 .bg-gray-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
@@ -1349,6 +1354,11 @@ header ul li:hover {
 .bg-green {
   --tw-bg-opacity: 1;
   background-color: rgb(31 201 0 / var(--tw-bg-opacity, 1));
+}
+
+.bg-info {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 238 222 / var(--tw-bg-opacity, 1));
 }
 
 .bg-lightPuple {
@@ -1373,16 +1383,6 @@ header ul li:hover {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-}
-
-.bg-brown {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 238 222 / var(--tw-bg-opacity, 1));
-}
-
-.bg-info {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 238 222 / var(--tw-bg-opacity, 1));
 }
 
 .bg-cover {
@@ -1674,6 +1674,11 @@ header ul li:hover {
   color: rgb(107 114 128 / var(--tw-text-opacity, 1));
 }
 
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity, 1));
+}
+
 .text-gray-900 {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity, 1));
@@ -1707,11 +1712,6 @@ header ul li:hover {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.text-gray-700 {
-  --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity, 1));
 }
 
 .underline {
@@ -2127,16 +2127,16 @@ header ul i {
     padding-bottom: 3.5rem;
   }
 
+  .lg\:pb-2 {
+    padding-bottom: 0.5rem;
+  }
+
   .lg\:pe-6 {
     padding-inline-end: 1.5rem;
   }
 
   .lg\:ps-10 {
     padding-inline-start: 2.5rem;
-  }
-
-  .lg\:pb-2 {
-    padding-bottom: 0.5rem;
   }
 
   .lg\:text-left {

@@ -55,7 +55,7 @@ class CustomTaxonomies {
                 'hierarchical' => true,
                 'args'         => []
             ],
-            'itineraries_itinerary_types ' => [
+            'itineraries_itinerary_types' => [
                 'singular'     => 'Itinerary Types',
                 'plural'       => 'Itinerary Types',
                 'post_types'   => ['itineraries'],
