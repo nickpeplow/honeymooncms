@@ -216,6 +216,15 @@ function theme_enqueue_scripts() {
 		null,
 		true // Load in footer
 	);
+	// Enqueue app.js
+wp_enqueue_script(
+    'app-js',
+    get_template_directory_uri() . '/assets/js/app.js', // adjust path if different
+    array('jquery'), // dependencies, optional
+    null, // version, or use filemtime() for cache busting
+    true // load in footer
+);
+
     
 }
 add_action('wp_enqueue_scripts', 'theme_enqueue_scripts');

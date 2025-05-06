@@ -48,6 +48,13 @@ class CustomPostTypes {
                     'menu_icon' => 'dashicons-editor-help',
                 ]
             ],
+            'restaurant' => [
+                'singular' => 'Restaurant',
+                'plural'   => 'Restaurant',
+                'args'     => [
+                    'menu_icon' => 'dashicons-carrot',
+                ]
+            ],
         ];
 
         foreach ($post_types as $key => $settings) {

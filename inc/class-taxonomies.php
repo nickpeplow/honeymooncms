@@ -13,6 +13,13 @@ class CustomTaxonomies {
                 'hierarchical' => true,
                 'args'         => []
             ],
+            'destination_experience_type' => [
+                'singular'     => 'Experience Type',
+                'plural'       => 'Experience Type',
+                'post_types'   => ['destinations'],
+                'hierarchical' => true,
+                'args'         => []
+            ],
             'accomodations_regions' => [
                 'singular'     => 'Regions',
                 'plural'       => 'Regions',
@@ -52,6 +59,20 @@ class CustomTaxonomies {
                 'singular'     => 'Itinerary Types',
                 'plural'       => 'Itinerary Types',
                 'post_types'   => ['itineraries'],
+                'hierarchical' => true,
+                'args'         => []
+            ],
+            'restaurant_regions' => [
+                'singular'     => 'Regions',
+                'plural'       => 'Regions',
+                'post_types'   => ['restaurant'],
+                'hierarchical' => true,
+                'args'         => []
+            ],
+            'restaurant_restaurant_type' => [
+                'singular'     => 'Restaurant Type',
+                'plural'       => 'Restaurant Type',
+                'post_types'   => ['restaurant'],
                 'hierarchical' => true,
                 'args'         => []
             ],
