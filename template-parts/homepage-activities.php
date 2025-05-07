@@ -156,12 +156,15 @@ if ($activities_query->have_posts()) :
 
                 <div x-data="{ expanded: false }">
                   <p class="widget_text_teaser my-2">
-                    <span x-show="!expanded">
-                      <?php echo wp_trim_words(get_the_excerpt(), 25, '...'); ?>
-                    </span>
-                    <span x-show="expanded">
-                      <?php echo get_the_excerpt(); ?>
-                    </span>
+                    <!-- Shortened Content (25 words) -->
+                    <div x-show="!expanded" class="text-h4 font-normal leading-p text-secondary">
+                      <?php echo wp_trim_words(strip_tags(get_the_content()), 25, '...'); ?>
+                    </div>
+
+                    <!-- Full Content -->
+                    <div x-show="expanded">
+                      <?php echo apply_filters('the_content', get_the_content()); ?>
+                    </div>
                   </p>
                   <div class="border-dashed h-1 border-t border-color"></div>
                   <div class="text-right mt-2">
