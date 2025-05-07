@@ -25,28 +25,31 @@ document.querySelectorAll("#right-sticky li").forEach(function (item) {
   });
 });
 
-let tabsContainer = document.querySelector(".tabs");
+//tab script
 
-let tabTogglers = tabsContainer.querySelectorAll(".tabs a");
+document.addEventListener("DOMContentLoaded", function () {
+  // Handle tab navigation for all tab groups on the page
+  document.querySelectorAll('.tabs, .inline-flex').forEach(tabList => {
+    tabList.querySelectorAll('a').forEach(tab => {
+      tab.addEventListener('click', function (e) {
+        e.preventDefault();
 
-console.log(tabTogglers);
+        const container = tab.closest('.container'); // scope within the section
+        const tabId = tab.getAttribute('href').replace('#', '');
 
-tabTogglers.forEach(function (toggler) {
-  toggler.addEventListener("click", function (e) {
-    e.preventDefault();
+        // Remove active classes
+        container.querySelectorAll('.tabs li, .inline-flex li').forEach(li => {
+          li.classList.remove('active-tab');
+        });
+        container.querySelectorAll('.tab-contents > div').forEach(content => {
+          content.classList.add('hidden');
+        });
 
-    let tabName = this.getAttribute("href");
-
-    let tabContents = document.querySelector(".tab-contents");
-
-    for (let i = 0; i < tabContents.children.length; i++) {
-      tabTogglers[i].parentElement.classList.remove("active-tab");
-      tabContents.children[i].classList.remove("hidden");
-      if ("#" + tabContents.children[i].id === tabName) {
-        continue;
-      }
-      tabContents.children[i].classList.add("hidden");
-    }
-    e.target.parentElement.classList.add("active-tab");
+        // Add active classes
+        tab.parentElement.classList.add('active-tab');
+        const activeTab = container.querySelector(`#${tabId}`);
+        if (activeTab) activeTab.classList.remove('hidden');
+      });
+    });
   });
 });
