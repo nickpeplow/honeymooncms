@@ -1043,6 +1043,10 @@ header ul li:hover {
   margin-top: 1.5rem;
 }
 
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
 .block {
   display: block;
 }
@@ -1489,6 +1493,11 @@ header ul li:hover {
 .py-px {
   padding-top: 1px;
   padding-bottom: 1px;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .pb-1 {
@@ -1967,6 +1976,10 @@ header ul i {
 
   .sm\:hidden {
     display: none;
+  }
+
+  .sm\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .sm\:justify-center {
