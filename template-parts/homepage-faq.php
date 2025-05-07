@@ -19,7 +19,19 @@
 			<section class="text-gray-700">
             <div class="container mx-auto">
               <div class="flex flex-wrap sm:mx-auto sm:mb-2 -mx-2">
-                <div class="w-full pt-2 lg:pb-2">
+
+          <?php
+            $args = array(
+                'post_type' => 'faqs',
+                'posts_per_page' => -1,
+                'post_status' => 'publish',
+            );
+
+            $query = new WP_Query($args);
+
+            if ($query->have_posts()) :
+                while ($query->have_posts()) : $query->the_post(); ?>
+                    <div class="w-full pt-2 lg:pb-2">
                   <details class="mb-4 border rounded-lg border-color">
                     <summary
                       class="font-semibold bg-brown rounded-md py-2 px-4 flex items-center gap-2.5 text-black"
@@ -29,55 +41,20 @@
                         class=""
                         style="width: 20px; height: 20px"
                       />
-                      Is Bali a good Honeymoon destination?
+                      <?php the_title(); ?>
                     </summary>
 
                     <span class="p-3 block">
-                      Bali is a great honeymoon destination. One of the world's
-                      most romantic places, that has a lot to offer in nature,
-                      culture and affordable luxury. Beautiful beaches, jungle
-                      and ricefields. Fine dining and amazing nightlife.
-                      Beautiful sunsets and romantic places to explore, discover
-                      them all in our Honeymoon Guide.
-                    </span>
-                  </details>
-                  <details class="mb-4 border rounded-lg border-color">
-                    <summary
-                      class="font-semibold bg-brown rounded-md py-2 px-4 flex items-center gap-2.5 text-black"
-                    >
-                      <img
-                        src="<?php echo get_template_directory_uri(); ?>/assets/images/questionmark.png"
-                        class=""
-                        style="width: 20px; height: 20px"
-                      />
-                      What is the best region in Bali for a Honeymoon?
-                    </summary>
-
-                    <span class="p-3 block">
-                      Seminyak, Uluwatu and Ubud are the most popular honeymoon
-                      destinations in Bali. However the island is very diverse
-                      and has a lot to offer for any couple!
-                    </span>
-                  </details>
-                  <details class="mb-4 border rounded-lg border-color">
-                    <summary
-                      class="font-semibold bg-brown rounded-md py-2 px-4 flex items-center gap-2.5 text-black"
-                    >
-                      <img
-                        src="<?php echo get_template_directory_uri(); ?>/assets/images/questionmark.png"
-                        class=""
-                        style="width: 20px; height: 20px"
-                      />
-                      Is Kuta in Bali a good honeymoon destination.
-                    </summary>
-
-                    <span class="p-3 block">
-                      We don't think so. Kuta does not have very romantic vibes.
-                      This is where you find masses of tourists looking for
-                      cheap liquor. Nearby Seminyak has more upscale vibes.
+                        <?php the_content(); ?>
                     </span>
                   </details>
                 </div>
+                <?php endwhile;
+                wp_reset_postdata();
+            else :
+                echo '<p>No posts found.</p>';
+            endif;
+          ?>
               </div>
             </div>
           </section>
