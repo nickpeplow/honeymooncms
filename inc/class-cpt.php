@@ -18,6 +18,9 @@ class CustomPostTypes {
                 'plural'   => 'Accomodations',
                 'args'     => [
                     'menu_icon' => 'dashicons-building',
+                    'has_archive' => true,
+                    'rewrite'     => ['slug' => 'accomodations'], // Optional for pretty URLs
+                    'public'      => true,
                 ]
             ],
             'activities' => [
@@ -46,6 +49,9 @@ class CustomPostTypes {
                 'plural'   => 'Faqs',
                 'args'     => [
                     'menu_icon' => 'dashicons-editor-help',
+                     'has_archive' => true,
+                     'rewrite'     => ['slug' => 'faqs'],
+                     'public'      => true,
                 ]
             ],
             'restaurant' => [
