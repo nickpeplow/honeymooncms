@@ -12,49 +12,25 @@
 <section class="container m-auto">
       <div class="flex flex-col-reverse md:grid md:grid-cols-12 gap-4">
         <div class="md:col-span-9 md:pr-6">
-		        <h2 id="honeymoon-hotels-and-resorts" class="mb-3 mt-8">
-          Honeymoon Hotels and Resorts
-        </h2>
-        <p>
-          The options for Bali honeymoon hotels are endless. Bali offers
-          <strong>spectacular luxury at reasonable cost</strong>, especially
-          compared to locations in the Western hemisphere. A 5-star hotel
-          experience in Bali might cost the same as a 3-star hotel in Australia,
-          Europe, or North America. Add the famous
-          <strong>Balinese hospitality</strong>, and you can be sure to
-          celebrate your honeymoon in comfort and style!
-        </p>
-        <p class="mt-3">
-          Not all regions in Bali offer the same amount of luxury honeymoon
-          hotel options - but there are great places to stay all over the island
-          for any budget.
-          <a class="text-tertiary underline font-bold" href="#">Uluwatu</a>
-          and
-          <a class="text-tertiary underline font-bold" href="#">Seminyak</a>
-          are your best bets for luxury beachfront resorts, while the jungle
-          town of
-          <a class="text-tertiary underline font-bold" href="#">Ubud</a>
-          is well known for it’s luxury accomodation overlooking valleys, rivers
-          and ricefields.
-        </p>
-        <p class="mt-3">
-          Make sure to check our list of the
-          <a class="text-tertiary underline font-bold" href="#"
-            >top 20 most luxurious Bali hotels</a
-          >
-          for an unforgettable experience. However, no need to splurge every
-          night, even during a honeymoon! We have composed a list of
-          <a class="text-tertiary underline font-bold" href="#"
-            >10 amazing budget hotels</a
-          >, often with <strong>rooms under 100$ per night</strong>.
-        </p>
-        <p class="mt-3">
-          We have listed
-          <strong>our 3 absolute favorite luxury hotels below</strong>. You
-          can’t go wrong on these. But make sure to check out our regional
-          articles for many more great options (including some more
-          budget-friendly suggestions).
-        </p>
+        <?php
+            $args = array(
+                'post_type' => 'accomodations',
+                'posts_per_page' => -1,
+                'post_status' => 'publish',
+            );
+
+            $query = new WP_Query($args);
+
+            if ($query->have_posts()) :
+                while ($query->have_posts()) : $query->the_post(); ?>
+                    <h2 id="honeymoon-hotels-and-resorts" class="mb-3 mt-8"><?php the_title(); ?></h2>
+                    <div><?php the_content(); ?></div> <!-- Will render <a> and all valid HTML -->
+                <?php endwhile;
+                wp_reset_postdata();
+            else :
+                echo '<p>No posts found.</p>';
+            endif;
+          ?>
         <h3 class="mt-8">Private jungle villa at Viceroy Bali</h3>
         <span class="italic text-gray-500">10m drive north of Ubud</span>
         <div class="grid grid-cols-2 gap-4">
