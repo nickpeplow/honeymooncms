@@ -9,49 +9,27 @@
  */
 
 ?>
+
+<?php
+$page_id = get_the_ID(6);
+
+// Get each field value
+$itineraries_title  = get_field('itineraries_title', $page_id);
+$itineraries_description = get_field('itineraries_description', $page_id);
+?>
+
+
 <section class="container m-auto">
       <div class="flex flex-col-reverse md:grid md:grid-cols-12 gap-4">
         <div class="md:col-span-9 md:pr-6">
-		                <h2 id="best-bali-honeymoon-itineraries" class="mb-3 mt-8">
-          Best Bali Honeymoon Itineraries
+        <?php if ($itineraries_title): ?>
+		    <h2 id="best-bali-honeymoon-itineraries" class="mb-3 mt-8">
+          <?php echo esc_html($itineraries_title); ?>
         </h2>
-        <p class="mb-5">
-          Bali is a large island with many regions. There is a lot to see and
-          do, and the options might be overwhelming. We have created 8 unique
-          Bali honeymoon itineraries which can be a good starting point to plan
-          your perfect <strong>Bali honeymoon itinerary</strong>. Before diving
-          into the itineraries, there are three completely different ways you
-          can visit Bali:
-        </p>
-        <ol class="pl-5 list-decimal">
-          <li class="pb-3">
-            <strong>Visit multiple Bali regions:</strong> We believe the best
-            way to see Bali, is by spending time in a few different regions. We
-            recommend taking it easy, and staying 3 to 4 nights per region.
-            Traveling can be exhausting, and this allows you to really enjoy the
-            regions you visit.
-          </li>
-          <li class="pb-3">
-            <strong>Stay in one place:</strong> This is more convenient,
-            especially for couples looking to wind down on their honeymoon after
-            their wedding. You can still discover the island by doing some day
-            trips. Check our
-            <a class="text-tertiary underline font-bold" href="#"
-              >single-hotel itinerary suggestion</a
-            >.
-          </li>
-          <li class="pb-3">
-            <strong>Combine Bali &amp; other islands:</strong> With 17.000
-            islands, Indonesia has a lot more to offer than just Bali.
-            <a class="text-tertiary underline font-bold" href="#"
-              >Scroll further down this article</a
-            >
-            for an overview of other beautiful regions in Indonesia to visit.
-            Why not combine one of our suggested itineraries below with another
-            region of Indonesia?
-          </li>
-        </ol>
-
+        <?php endif; ?>
+        <?php if ($itineraries_description): ?>
+          <?php echo wpautop(wp_kses_post($itineraries_description)); ?>
+        <?php endif; ?>
     
             <!-- Tabs -->
           <div class="tab-container">
