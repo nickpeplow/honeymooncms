@@ -19,9 +19,6 @@ $itineraries_description = get_field('itineraries_description', $page_id);
 ?>
 
 
-<section class="container m-auto">
-      <div class="flex flex-col-reverse md:grid md:grid-cols-12 gap-4">
-        <div class="md:col-span-9 md:pr-6">
         <?php if ($itineraries_title): ?>
 		    <h2 id="best-bali-honeymoon-itineraries" class="mb-3 mt-8">
           <?php echo esc_html($itineraries_title); ?>
@@ -200,6 +197,3 @@ $itineraries_description = get_field('itineraries_description', $page_id);
         <?php endforeach; ?>
       </div>
           </div>
-		</div>
-	</div>
-</section>

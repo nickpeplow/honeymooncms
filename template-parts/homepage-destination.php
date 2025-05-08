@@ -36,9 +36,7 @@ $highlight_image_3_2     = get_field('highlight_image_3_2', $page_id);
 $highlight_image_3_3     = get_field('highlight_image_3_3', $page_id);
 ?>
 
-<section class="container m-auto">
-      <div class="flex flex-col-reverse md:grid md:grid-cols-12 gap-4">
-        <div class="md:col-span-9 md:pr-6">
+
         <?php if ($highlight_title_1 || $highlight_description_1): ?>
 		        <h3 class="mb-3 mt-8"><?php echo esc_html($highlight_title_1); ?></h3>
           <p>
@@ -133,6 +131,3 @@ $highlight_image_3_3     = get_field('highlight_image_3_3', $page_id);
             </div>
           </div>
           <?php endif; ?>
-		</div>
-	</div>
-</section>

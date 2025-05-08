@@ -10,9 +10,7 @@
 
 ?>
 
-<section class="container m-auto">
-    <div class="flex flex-col-reverse md:grid md:grid-cols-12 gap-4">
-        <div class="md:col-span-9 md:pr-6">
+
 		       <div class="gap-4 bg-info p-5 rounded-lg">
             <div class="grid grid-cols-12">
               <div class="col-span-10">
@@ -50,6 +48,3 @@
               with us.
             </p>
           </div>
-		</div>
-	</div>
-</section>

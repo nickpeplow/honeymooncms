@@ -19,9 +19,6 @@ $intro_paragraph = get_field('intro_paragraph', $page_id);
 ?>
 
 <!-- ===================== Introduction Start ================== -->
-<section class="container m-auto">
-      <div class="flex flex-col-reverse md:grid md:grid-cols-12 gap-4">
-        <div class="md:col-span-9 md:pr-6">
         <?php if ($intro_heading): ?>
 		    <h2 id="bali-honeymoon-the-perfect-romantic-destination" class="mb-3">
         <?php echo esc_html($intro_heading); ?>
@@ -32,6 +29,3 @@ $intro_paragraph = get_field('intro_paragraph', $page_id);
           <?php echo wp_kses_post($intro_paragraph); ?>
           </p>
           <?php endif; ?>
-		</div>
-	</div>
-</section>

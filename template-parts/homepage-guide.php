@@ -20,9 +20,6 @@ $map_image         = get_field('map_image', $page_id);
 $map_description   = get_field('map_description', $page_id);
 ?>
 
-<section class="container m-auto">
-      <div class="flex flex-col-reverse md:grid md:grid-cols-12 gap-4">
-        <div class="md:col-span-9 md:pr-6">
           <?php if ($map_title): ?>
 		        <h2 id="bali-regions-and-map " class="mb-3 mt-8">
             <?php echo esc_html($map_title); ?>
@@ -52,7 +49,4 @@ $map_description   = get_field('map_description', $page_id);
           <?php echo wp_kses_post($map_description); ?>
           </p>
           <?php endif; ?>
-		</div>
-	</div>
-</section>
-<!-- ===================== Choose US End ================== -->
+		

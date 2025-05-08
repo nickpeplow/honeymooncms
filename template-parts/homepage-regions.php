@@ -10,9 +10,6 @@
 
 ?>
 <!-- ===================== Regions Start ================== -->
-<section class="container m-auto">
-  <div class="flex flex-col-reverse md:grid md:grid-cols-12 gap-4">
-    <div class="md:col-span-9 md:pr-6">
     <div class="tab-container">
       <div class="mb-4 bg-primary w-100 rounded-tl-lg rounded-tr-lg pb-3">
         <p class="text-center font-bold p-3">What are you looking for?</p>
@@ -187,6 +184,3 @@
         <?php endforeach; ?>
       </div>
           </div>
-    </div>
-  </div>
-</section>

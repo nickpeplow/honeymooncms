@@ -10,9 +10,6 @@
 
 ?>
 
-<section class="container m-auto">
-      <div class="flex flex-col-reverse md:grid md:grid-cols-12 gap-4">
-        <div class="md:col-span-9 md:pr-6">
 		    <h2 id="frequently-asked-questions" class="mb-3 mt-8">
 			  Frequently Asked Questions
 			</h2>
@@ -58,6 +55,4 @@
               </div>
             </div>
           </section>
-		</div>
-	</div>
-</section>
+		

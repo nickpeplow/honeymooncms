@@ -19,9 +19,6 @@ $quick_guide_description = get_field('quick_guide_description', $page_id);
 ?>
 
       <!-- ===================== Services & Package Section Start ================== -->
-      <section class="container m-auto">
-      <div class="flex flex-col-reverse md:grid md:grid-cols-12 gap-4">
-        <div class="md:col-span-9 md:pr-6">
         <?php if ($quick_guide_title): ?>
           <h2 id="the-cost-of-a-bali-honeymoon" class="mb-3 mt-8">
             <?php echo esc_html($quick_guide_title); ?>
@@ -32,7 +29,5 @@ $quick_guide_description = get_field('quick_guide_description', $page_id);
             <?php echo wpautop(wp_kses_post($quick_guide_description)); ?>
           </p>
         <?php endif; ?>
-		</div>
-	</div>
-</section>
+		
       <!-- ===================== Services & Package Section End ================== -->

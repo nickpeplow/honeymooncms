@@ -9,9 +9,7 @@
  */
 
 ?>
-<section class="container m-auto">
-      <div class="flex flex-col-reverse md:grid md:grid-cols-12 gap-4">
-        <div class="md:col-span-9 md:pr-6">
+
         <?php
             $args = array(
                 'post_type' => 'accomodations',
@@ -218,6 +216,3 @@
             >private pool villas</a
           >.
         </p>
-		</div>
-	</div>
-</section>

@@ -18,9 +18,7 @@ $dining_title  = get_field('dining_title', $page_id);
 $dining_description = get_field('dining_description', $page_id);
 ?>
 
-<section class="container m-auto">
-      <div class="flex flex-col-reverse md:grid md:grid-cols-12 gap-4">
-        <div class="md:col-span-9 md:pr-6">
+
         <?php if ($dining_title): ?>
           <h2 id="romantic-dining-in-bali" class="mb-3 mt-8">
           <?php echo esc_html($dining_title); ?>
@@ -117,6 +115,3 @@ endif;
             >10 Best Fine Dining Restaurants in Bali</a
           >, with up-to-date menu prices.
         </p>
-		</div>
-	</div>
-</section>

@@ -24,9 +24,7 @@ $explore_map_image = get_field('explore_map_image', $page_id);
 $full_description = get_field('full_description', $page_id);
 ?>
 
-<section class="container m-auto">
-      <div class="flex flex-col-reverse md:grid md:grid-cols-12 gap-4">
-        <div class="md:col-span-9 md:pr-6">
+
         <?php if ($section_title): ?>
           <h2 id="indonesia-beyond-bali" class="mb-3 mt-8">
             <?php echo esc_html($section_title); ?>
@@ -88,6 +86,3 @@ $full_description = get_field('full_description', $page_id);
           <?php echo wp_kses_post($full_description); ?>
         </ul>
         <?php endif; ?>
-		</div>
-	</div>
-</section>

@@ -21,9 +21,7 @@ $activities_small_description = get_field('activities_small_description', $page_
 $activities_big_description = get_field('activities_big_description', $page_id);
 ?>
 
-<section class="container m-auto">
-      <div class="flex flex-col-reverse md:grid md:grid-cols-12 gap-4">
-        <div class="md:col-span-9 md:pr-6">
+
         <?php if ($planning_title): ?>
 		      <h3 class="mb-3 mt-8"><?php echo esc_html($planning_title); ?></h3>
         <?php endif; ?>
@@ -126,6 +124,3 @@ endif;
           <?php echo wpautop(wp_kses_post($activities_big_description)); ?>
         </p>
         <?php endif; ?>
-		</div>
-	</div>
-</section>
