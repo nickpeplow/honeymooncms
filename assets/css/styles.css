@@ -991,10 +991,6 @@ header ul li:hover {
   margin-bottom: 1.5rem;
 }
 
-.mb-7 {
-  margin-bottom: 1.75rem;
-}
-
 .mr-1 {
   margin-right: 0.25rem;
 }
@@ -1039,14 +1035,6 @@ header ul li:hover {
   margin-top: 2.25rem;
 }
 
-.mt-6 {
-  margin-top: 1.5rem;
-}
-
-.mb-8 {
-  margin-bottom: 2rem;
-}
-
 .block {
   display: block;
 }
@@ -1065,10 +1053,6 @@ header ul li:hover {
 
 .grid {
   display: grid;
-}
-
-.contents {
-  display: contents;
 }
 
 .hidden {
@@ -1495,11 +1479,6 @@ header ul li:hover {
   padding-bottom: 1px;
 }
 
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
 .pb-1 {
   padding-bottom: 0.25rem;
 }
@@ -1603,6 +1582,10 @@ header ul li:hover {
   line-height: 1.5rem;
 }
 
+.text-h4 {
+  font-size: 18px;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -1623,10 +1606,6 @@ header ul li:hover {
   line-height: 1rem;
 }
 
-.text-h4 {
-  font-size: 18px;
-}
-
 .font-bold {
   font-weight: 700;
 }
@@ -1635,12 +1614,12 @@ header ul li:hover {
   font-weight: 500;
 }
 
-.font-semibold {
-  font-weight: 600;
-}
-
 .font-normal {
   font-weight: 400;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .uppercase {
@@ -1705,6 +1684,11 @@ header ul li:hover {
   color: rgb(244 212 182 / var(--tw-text-opacity, 1));
 }
 
+.text-secondary {
+  --tw-text-opacity: 1;
+  color: rgb(53 52 57 / var(--tw-text-opacity, 1));
+}
+
 .text-sky-500 {
   --tw-text-opacity: 1;
   color: rgb(14 165 233 / var(--tw-text-opacity, 1));
@@ -1728,11 +1712,6 @@ header ul li:hover {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.text-secondary {
-  --tw-text-opacity: 1;
-  color: rgb(53 52 57 / var(--tw-text-opacity, 1));
 }
 
 .underline {
@@ -1763,10 +1742,6 @@ header ul li:hover {
   --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.filter {
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .transition {
@@ -1976,10 +1951,6 @@ header ul i {
 
   .sm\:hidden {
     display: none;
-  }
-
-  .sm\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .sm\:justify-center {
