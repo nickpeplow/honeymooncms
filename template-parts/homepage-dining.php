@@ -9,67 +9,28 @@
  */
 
 ?>
+
+<?php
+$page_id = get_the_ID(6);
+
+// Get each field value
+$dining_title  = get_field('dining_title', $page_id);
+$dining_description = get_field('dining_description', $page_id);
+?>
+
 <section class="container m-auto">
       <div class="flex flex-col-reverse md:grid md:grid-cols-12 gap-4">
         <div class="md:col-span-9 md:pr-6">
-		                <h2 id="romantic-dining-in-bali" class="mb-3 mt-8">
-          Romantic Dining in Bali
-        </h2>
+        <?php if ($dining_title): ?>
+          <h2 id="romantic-dining-in-bali" class="mb-3 mt-8">
+          <?php echo esc_html($dining_title); ?>
+          </h2>
+        <?php endif; ?>
+        <?php if ($dining_description): ?>
         <p class="mt-3">
-          In most countries, the Michelin Guide sets the record straight. It
-          decides which restaurants deserve their famous stars. Unfortunately,
-          they not operate in Bali or Indonesia. We believe they should! Bali
-          offers
-          <strong
-            >world-class
-            <a class="text-tertiary underline font-bold" href="#"
-              >fine dining</a
-            >
-            experiences</strong
-          >
-          that can compete with some of the finest Michelin-starred restaurants
-          out there.
+          <?php echo wpautop(wp_kses_post($dining_description)); ?>
         </p>
-        <p class="mt-3">
-          Most romantic fine dining restaurants can be found in
-          <a class="text-tertiary underline font-bold" href="#">Ubud</a>
-          and
-          <a class="text-tertiary underline font-bold" href="#">Seminyak</a>.
-          We’ve listed a few below. In Ubud, you can even find some options for
-          romantic <strong>private dining</strong> surrounded by candlelights in
-          a secluded location overlooking the jungle. The perfect dining
-          experience for couples on their honeymoon!
-        </p>
-        <p class="mt-3">
-          While
-          <a class="text-tertiary underline font-bold" href="#">Canggu</a>
-          and
-          <a class="text-tertiary underline font-bold" href="#">Uluwatu</a>
-          are not offering the same level of fine dining as Ubud or Seminyak,
-          they offer a wide variety of <strong>healthy food</strong> and varied
-          international dining options – likely to serve the health-conscious
-          surfers staying in these places. Canggu is where you will likely be
-          served the most “Instagram-worthy” plates of beautifully presented
-          dishes.
-        </p>
-        <p class="mt-3">
-          Don’t just stick to fancy food! You might like to splurge a little on
-          your honeymoon. But don’t forget to try out the excellent
-          <strong>local Balinese and Indonesian dishes</strong>. Bali is known
-          for its pork dishes, including <em>Sate Babi</em> (grilled pork
-          skewers) and <em>Babi Guling</em> (spicy dish made of suckling pig).
-          <em>Ayam Betutu</em> is a delicious Balinese meal consisting of
-          chicken and rice. Anywhere across Bali you will find <em>Warungs</em>,
-          local family restaurants serving a wide variety of Indonesian dishes.
-          Don’t know what to choose? Ask for <em>Nasi Campur</em>, a bowl of
-          white rice surrounded by samples of the best dishes they have on
-          offer.
-        </p>
-        <p class="my-8">
-          If we had to pick our
-          <strong>favorite honeymoon restaurants in Bali</strong>, these would
-          be our picks:
-        </p>
+        <?php endif; ?>
         <?php
 $args = array(
   'post_type' => 'restaurant',
@@ -80,10 +41,9 @@ $restaurant_query = new WP_Query($args);
 
 if ($restaurant_query->have_posts()) :
   while ($restaurant_query->have_posts()) : $restaurant_query->the_post();
-    $restaurant_terms = wp_get_post_terms(get_the_ID(), 'restaurant_restaurant_type'); // Change taxonomy name if different
-    $region_terms = wp_get_post_terms(get_the_ID(), 'restaurant_regions'); // Replace with your actual region taxonomy
+    $restaurant_terms = wp_get_post_terms(get_the_ID(), 'restaurant_restaurant_type'); 
+    $region_terms = wp_get_post_terms(get_the_ID(), 'restaurant_regions'); 
     $region_name = !empty($region_terms) ? $region_terms[0]->name : '';
-    $location = get_field('location'); // ACF field (optional)
     ?>
     <div class="flex flex-wrap lg:flex-nowrap mb-6">
       <div class="basis-1/3">
