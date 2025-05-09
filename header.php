@@ -25,7 +25,7 @@
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>
   <!-- ===================== Header Start ================== -->
-  <header class="bg-primary">
+  <header id="nav-header" class="bg-primary">
       <nav class="relative">
         <div class="container mx-auto flex justify-between items-center">
           <img

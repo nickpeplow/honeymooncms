@@ -622,6 +622,10 @@ a {
   line-height: 29px;
 }
 
+#nav-header, .site-main{
+  padding: 0 5vw;
+}
+
 aside {
   position: sticky;
   top: 20px;
@@ -946,11 +950,6 @@ header ul li:hover {
   margin-bottom: 1.25rem;
 }
 
-.my-8 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
 .-ms-3 {
   margin-inline-start: -0.75rem;
 }
@@ -1157,10 +1156,6 @@ header ul li:hover {
   list-style-position: inside;
 }
 
-.list-decimal {
-  list-style-type: decimal;
-}
-
 .list-disc {
   list-style-type: disc;
 }
@@ -1284,6 +1279,10 @@ header ul li:hover {
   border-width: 1px;
 }
 
+.border-b {
+  border-bottom-width: 1px;
+}
+
 .border-b-2 {
   border-bottom-width: 2px;
 }
@@ -1294,10 +1293,6 @@ header ul li:hover {
 
 .border-t {
   border-top-width: 1px;
-}
-
-.border-b {
-  border-bottom-width: 1px;
 }
 
 .border-dashed {
@@ -1976,12 +1971,12 @@ header ul i {
     position: static;
   }
 
-  .md\:col-span-9 {
-    grid-column: span 9 / span 9;
-  }
-
   .md\:col-span-3 {
     grid-column: span 3 / span 3;
+  }
+
+  .md\:col-span-9 {
+    grid-column: span 9 / span 9;
   }
 
   .md\:block {
@@ -2041,16 +2036,16 @@ header ul i {
     padding-bottom: 0.5rem;
   }
 
+  .md\:pl-4 {
+    padding-left: 1rem;
+  }
+
   .md\:pr-6 {
     padding-right: 1.5rem;
   }
 
   .md\:pt-16 {
     padding-top: 4rem;
-  }
-
-  .md\:pl-4 {
-    padding-left: 1rem;
   }
 
   .md\:text-left {

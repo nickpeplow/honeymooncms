@@ -25,6 +25,9 @@
     a {
       @apply font-normal leading-a font-sans;
     }
+    #nav-header, .site-main{
+      padding: 0 5vw;
+    }
     aside {
       position: sticky;
       top: 20px;
