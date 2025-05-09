@@ -120,10 +120,11 @@
   }
   .container {
     width: 100%;
-    padding: 0px 15px;
+    padding: 0px;
+    max-width: 1040px;
   }
   
-  @media (min-width: 640px) {
+  /* @media (min-width: 640px) {
     .container {
       max-width: 640px;
     }
@@ -150,7 +151,7 @@
     .container {
       max-width: 1536px;
     }
-  }
+  } */
   .mobile-menu ul li ul {
     display: none;
   }

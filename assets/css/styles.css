@@ -1188,6 +1188,10 @@ header ul li:hover {
   flex-wrap: wrap;
 }
 
+.items-start {
+  align-items: flex-start;
+}
+
 .items-center {
   align-items: center;
 }
@@ -1605,6 +1609,10 @@ header ul li:hover {
   line-height: 1rem;
 }
 
+.text-a {
+  font-size: 15px;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1798,39 +1806,38 @@ summary::marker {
 
 .container {
   width: 100%;
-  padding: 0px 15px;
+  padding: 0px;
+  max-width: 1040px;
 }
 
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
+/* @media (min-width: 640px) {
+    .container {
+      max-width: 640px;
+    }
   }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 980px;
-    padding: 0px 15px;
+  @media (min-width: 768px) {
+    .container {
+      max-width: 980px;
+      padding: 0px 15px;
+    }
   }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
+  @media (min-width: 1024px) {
+    .container {
+      max-width: 1024px;
+    }
   }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
+  
+  @media (min-width: 1280px) {
+    .container {
+      max-width: 1280px;
+    }
   }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
+  
+  @media (min-width: 1536px) {
+    .container {
+      max-width: 1536px;
+    }
+  } */
 
 .mobile-menu ul li ul {
   display: none;

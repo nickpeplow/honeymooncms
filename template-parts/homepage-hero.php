@@ -11,18 +11,18 @@
 ?>
 <section class="flex flex-col container m-auto">
       <div
-        class="container mx-auto flex justify-center items-center flex-col py-5"
+        class="container mx-auto flex justify-center items-start flex-col py-5"
       >
         <h1 class="text-black font-bold text-left mb-3 mt-5 ">
           Bali Honeymoon: The Complete Couples Guide 2025!
         </h1>
-        <p class="written-by text-left">  
+        <p class="written-by text-left text-a">  
           Last updated Feb 17, 2025 by
-          <a href="/about-us/">Olivia &amp; Dirk</a>, based on our 7 years in
+          <a class="text-tertiary underline font-bold" href="/about-us/">Olivia &amp; Dirk</a>, based on our 7 years in
           Bali. We can help with
-          <a href="/services/bali-honeymoon-packages/">honeymoon packages</a>,
-          <a href="/services/unique-experiences/">experiences</a> and our
-          <a href="/services/honeymoon-planning/">planning service</a>.
+          <a class="text-tertiary underline font-bold" href="/services/bali-honeymoon-packages/">honeymoon packages</a>,
+          <a class="text-tertiary underline font-bold" href="/services/unique-experiences/">experiences</a> and our
+          <a class="text-tertiary underline font-bold" href="/services/honeymoon-planning/">planning service</a>.
         </p>
       </div>
       <img
