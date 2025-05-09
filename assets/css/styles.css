@@ -735,7 +735,7 @@ header ul li {
   justify-content: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  padding-left: 1.25rem;
+  padding-left: 0.75rem;
   padding-right: 0.75rem;
 }
 
@@ -950,11 +950,6 @@ header ul li:hover {
   margin-bottom: 1.25rem;
 }
 
-.my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
 .-ms-3 {
   margin-inline-start: -0.75rem;
 }
@@ -1027,6 +1022,10 @@ header ul li:hover {
   margin-top: 1.25rem;
 }
 
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
 .mt-7 {
   margin-top: 1.75rem;
 }
@@ -1037,10 +1036,6 @@ header ul li:hover {
 
 .mt-9 {
   margin-top: 2.25rem;
-}
-
-.mt-6 {
-  margin-top: 1.5rem;
 }
 
 .block {
@@ -1521,10 +1516,6 @@ header ul li:hover {
 
 .pl-4 {
   padding-left: 1rem;
-}
-
-.pl-5 {
-  padding-left: 1.25rem;
 }
 
 .pl-7 {
