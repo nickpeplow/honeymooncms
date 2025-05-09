@@ -43,7 +43,7 @@ if ($restaurant_query->have_posts()) :
     $region_terms = wp_get_post_terms(get_the_ID(), 'restaurant_regions'); 
     $region_name = !empty($region_terms) ? $region_terms[0]->name : '';
     ?>
-    <div class="flex flex-wrap lg:flex-nowrap mb-6">
+    <div class="flex flex-wrap lg:flex-nowrap">
       <div class="basis-1/3">
         <figure class="min-[280px]:w-1/1 p-2 relative">
           <?php if (has_post_thumbnail()) : ?>
@@ -79,7 +79,7 @@ if ($restaurant_query->have_posts()) :
                   <p class="widget_text_teaser my-2">
                    <!-- Shortened Content (25 words) -->
                     <div x-show="!expanded" class="text-h4 font-normal leading-p text-secondary">
-                      <?php echo wp_trim_words(strip_tags(get_the_content()), 25, '...'); ?>
+                      <?php echo wp_trim_words(strip_tags(get_the_content()), 20, '...'); ?>
                     </div>
 
                     <!-- Full Content -->

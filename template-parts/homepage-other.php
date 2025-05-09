@@ -82,7 +82,5 @@ $full_description = get_field('full_description', $page_id);
           </p>
         </div>
         <?php if ($full_description): ?>
-        <ul class="pl-5 list-disc">
           <?php echo wp_kses_post($full_description); ?>
-        </ul>
         <?php endif; ?>

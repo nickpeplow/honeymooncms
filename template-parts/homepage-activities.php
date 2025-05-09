@@ -53,7 +53,7 @@ if ($activities_query->have_posts()) :
     $region_name = !empty($region_terms) ? $region_terms[0]->name : '';
     $location = get_field('location'); // Optional ACF field
     ?>
-    <div class="flex flex-wrap lg:flex-nowrap mb-6">
+    <div class="flex flex-wrap lg:flex-nowrap">
       <div class="basis-1/3">
         <figure class="min-[280px]:w-1/1 p-2 relative">
           <?php if (has_post_thumbnail()) : ?>

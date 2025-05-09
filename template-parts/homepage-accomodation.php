@@ -24,7 +24,7 @@
 
             if ($query->have_posts()) :
                 while ($query->have_posts()) : $query->the_post(); ?>
-                    <h2 id="honeymoon-hotels-and-resorts" class="mb-3 mt-8"><?php the_title(); ?></h2>
+                    <h2 id="honeymoon-hotels-and-resorts" class="mb-3 mt-5"><?php the_title(); ?></h2>
                     <div><?php the_content(); ?></div> <!-- Will render <a> and all valid HTML -->
                 <?php endwhile;
                 wp_reset_postdata();

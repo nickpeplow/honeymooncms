@@ -10,7 +10,7 @@
 
 ?>
 <!-- ===================== Regions Start ================== -->
-    <div class="tab-container">
+    <div class="tab-container mt-5">
       <div class="mb-4 bg-primary w-100 rounded-tl-lg rounded-tr-lg pb-3">
         <p class="text-center font-bold p-3">What are you looking for?</p>
 
@@ -59,7 +59,7 @@
 
               $experience_terms = wp_get_post_terms(get_the_ID(), 'destination_experience_type');
               ?>
-              <div class="flex mb-6">
+              <div class="flex">
                 <div class="basis-1/3">
                   <figure class="min-[280px]:w-1/1 p-2 relative">
                     <?php if (has_post_thumbnail()) : ?>
@@ -75,7 +75,7 @@
                 </div>
 
                 <div class="basis-2/3">
-                  <div class="flex flex-col justify-center p-5 pl-3">
+                  <div class="flex flex-col justify-center p-3 pl-3">
                     <div class="flex justify-between mb-1">
                       <header>
                         <div class="font-caveat text-xl font-medium text-sky-500">
@@ -88,7 +88,7 @@
                           </div>
 
                           <p class="widget_text_teaser my-3">
-                            <?php echo wp_trim_words(get_the_excerpt(), 20, '...'); ?>
+                            <?php echo wp_trim_words(get_the_excerpt(), 15, '...'); ?>
                           </p>
 
                           <a class="read_more read_moreaaaa" href="<?php the_permalink(); ?>">
