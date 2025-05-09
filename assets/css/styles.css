@@ -950,6 +950,11 @@ header ul li:hover {
   margin-bottom: 1.25rem;
 }
 
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .-ms-3 {
   margin-inline-start: -0.75rem;
 }
@@ -1032,6 +1037,10 @@ header ul li:hover {
 
 .mt-9 {
   margin-top: 2.25rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
 }
 
 .block {

@@ -31,7 +31,7 @@ $itineraries_description = get_field('itineraries_description', $page_id);
             <!-- Tabs -->
           <div class="tab-container">
             <div class="mb-4 bg-primary w-100 rounded-tl-lg rounded-tr-lg pb-3">
-        <p class="text-center font-bold p-3">What are you looking for?</p>
+        <p class="text-center font-bold p-3 pb-2">What are you looking for?</p>
 
         <?php
         $terms = get_terms(array(
@@ -41,12 +41,12 @@ $itineraries_description = get_field('itineraries_description', $page_id);
         ?>
 
         <?php if (!empty($terms) && !is_wp_error($terms)) : ?>
-          <ul class="inline-flex pt-2 px-1 w-full gap-2 justify-center flex-wrap">
-            <li class="px-3 pb-1 rounded-lg bg-white active-tab">
+          <ul class="inline-flex px-1 w-full gap-2 justify-center flex-wrap">
+            <li class="px-2 pb-1 rounded-lg bg-white active-tab">
               <a id="default-tab" href="#eleven" class="text-sm font-bold">All Itineraries</a>
             </li>
             <?php foreach ($terms as $term) : ?>
-              <li class="px-3 pb-1 rounded-lg bg-white">
+              <li class="px-2 pb-1 rounded-lg bg-white">
                 <a href="#<?php echo esc_attr($term->slug); ?>" class="text-sm font-bold">
                   <?php echo esc_html($term->name); ?>
                 </a>
@@ -75,7 +75,7 @@ $itineraries_description = get_field('itineraries_description', $page_id);
 
               $itinerary_terms = wp_get_post_terms(get_the_ID(), 'itineraries_itinerary_types');
               ?>
-              <div class="flex mb-6">
+              <div class="flex">
                 <div class="basis-1/3">
                   <figure class="min-[280px]:w-1/1 p-2 relative">
                     <?php if (has_post_thumbnail()) : ?>
@@ -91,7 +91,7 @@ $itineraries_description = get_field('itineraries_description', $page_id);
                 </div>
 
                 <div class="basis-2/3">
-                  <div class="flex flex-col justify-center p-5 pl-3">
+                  <div class="flex flex-col justify-center p-3 pl-3">
                     <div class="flex justify-between mb-1">
                       <header>
                         <div class="font-caveat text-xl font-medium text-sky-500">
@@ -104,7 +104,7 @@ $itineraries_description = get_field('itineraries_description', $page_id);
                           </div>
 
                           <p class="widget_text_teaser my-3">
-                            <?php echo wp_trim_words(get_the_excerpt(), 20, '...'); ?>
+                            <?php echo wp_trim_words(get_the_excerpt(), 15, '...'); ?>
                           </p>
 
                           <a class="read_more read_moreaaaa" href="<?php the_permalink(); ?>">

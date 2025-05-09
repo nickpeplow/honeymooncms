@@ -23,7 +23,7 @@ $activities_big_description = get_field('activities_big_description', $page_id);
 
 
         <?php if ($planning_title): ?>
-		      <h3 class="mb-3 mt-8"><?php echo esc_html($planning_title); ?></h3>
+		      <h3 class="mb-3 mt-6"><?php echo esc_html($planning_title); ?></h3>
         <?php endif; ?>
         <?php if ($planning_description): ?>
           <?php echo wpautop(wp_kses_post($planning_description)); ?>

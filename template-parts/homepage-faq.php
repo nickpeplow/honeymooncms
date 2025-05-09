@@ -29,7 +29,7 @@
             if ($query->have_posts()) :
                 while ($query->have_posts()) : $query->the_post(); ?>
                     <div class="w-full pt-2 lg:pb-2">
-                  <details class="mb-4 border rounded-lg border-color">
+                  <details class="border rounded-lg border-color">
                     <summary
                       class="font-semibold bg-brown rounded-md py-2 px-4 flex items-center gap-2.5 text-black"
                     >
