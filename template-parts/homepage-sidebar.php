@@ -20,49 +20,49 @@
           <ul id="right-sticky">
             <li class="border-b">
               <a
-                class="p-4 block"
+                class="p-3 block text-a"
                 href="#bali-honeymoon-the-perfect-romantic-destination"
                 class=""
                 >Bali Honeymoon: the perfect romantic destination</a
               >
             </li>
             <li class="border-b">
-              <a class="p-4 block" href="#bali-regions-and-map" class=""
+              <a class="p-3 block text-a" href="#bali-regions-and-map" class=""
                 >Bali regions and map</a
               >
             </li>
             <li class="border-b">
-              <a class="p-4 block" href="#honeymoon-hotels-and-resorts" class=""
+              <a class="p-3 block text-a" href="#honeymoon-hotels-and-resorts" class=""
                 >Honeymoon Hotels and Resorts</a
               >
             </li>
             <li class="border-b">
-              <a class="p-4 block" href="#best-bali-honeymoon-itineraries"
+              <a class="p-3 block text-a" href="#best-bali-honeymoon-itineraries"
                 >Best Bali Honeymoon Itineraries</a
               >
             </li>
             <li class="border-b">
-              <a class="p-4 block" href="#romantic-activities-in-bali"
+              <a class="p-3 block text-a" href="#romantic-activities-in-bali"
                 >Romantic Activities in Bali</a
               >
             </li>
             <li class="border-b">
-              <a class="p-4 block" href="#romantic-dining-in-bali"
+              <a class="p-3 block text-a" href="#romantic-dining-in-bali"
                 >Romantic Dining in Bali</a
               >
             </li>
             <li class="border-b">
-              <a class="p-4 block" href="#the-cost-of-a-bali-honeymoon"
+              <a class="p-3 block text-a" href="#the-cost-of-a-bali-honeymoon"
                 >The Cost of a Bali Honeymoon</a
               >
             </li>
             <li class="border-b">
-              <a class="p-4 block" href="#indonesia-beyond-bali"
+              <a class="p-3 block text-a" href="#indonesia-beyond-bali"
                 >Indonesia beyond Bali</a
               >
             </li>
             <li class="border-b">
-              <a class="p-4 block" href="#frequently-asked-questions"
+              <a class="p-3 block text-a" href="#frequently-asked-questions"
                 >Frequently Asked Questions</a
               >
             </li>

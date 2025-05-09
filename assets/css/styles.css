@@ -2055,6 +2055,14 @@ header ul i {
     padding-top: 4rem;
   }
 
+  .md\:pl-3 {
+    padding-left: 0.75rem;
+  }
+
+  .md\:pr-5 {
+    padding-right: 1.25rem;
+  }
+
   .md\:text-left {
     text-align: left;
   }

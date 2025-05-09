@@ -19,7 +19,7 @@ get_header(); ?>
 
     <section class="container m-auto">
         <div class="flex flex-col-reverse md:grid md:grid-cols-12 gap-4">
-            <div class="md:col-span-9 md:pr-6">
+            <div class="md:col-span-9 md:pr-5">
                 <?php
                 get_template_part('template-parts/homepage', 'introduction');
                 get_template_part('template-parts/homepage', 'destination');
@@ -35,7 +35,7 @@ get_header(); ?>
                 get_template_part('template-parts/homepage', 'author'); 
                 ?>
             </div>
-			<div class="md:col-span-3 md:pl-4">
+			<div class="md:col-span-3 md:pl-3">
 			   <?php
 			   get_template_part('template-parts/homepage', 'sidebar');
 			   ?>
