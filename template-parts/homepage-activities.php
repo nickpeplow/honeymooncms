@@ -65,7 +65,7 @@ if ($activities_query->have_posts()) :
       </div>
 
       <div class="w-full lg:w-2/3">
-        <div class="flex flex-col justify-center p-5 pl-3">
+        <div class="flex flex-col justify-center p-3 pl-3">
           <div class="flex justify-between mb-1">
             <header>
               <div class="font-caveat text-xl font-medium text-sky-500">
@@ -89,7 +89,7 @@ if ($activities_query->have_posts()) :
                   <p class="widget_text_teaser my-2">
                     <!-- Shortened Content (25 words) -->
                     <div x-show="!expanded" class="text-h4 font-normal leading-p text-secondary">
-                      <?php echo wp_trim_words(strip_tags(get_the_content()), 25, '...'); ?>
+                      <?php echo wp_trim_words(strip_tags(get_the_content()), 20, '...'); ?>
                     </div>
 
                     <!-- Full Content -->

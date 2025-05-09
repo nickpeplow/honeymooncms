@@ -1580,6 +1580,10 @@ header ul li:hover {
   line-height: 2.25rem;
 }
 
+.text-a {
+  font-size: 15px;
+}
+
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -1607,10 +1611,6 @@ header ul li:hover {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-a {
-  font-size: 15px;
 }
 
 .font-bold {
@@ -1793,6 +1793,10 @@ body {
 
 summary::marker {
   font-size: 0px;
+}
+
+.list-decimal {
+  list-style-type: decimal;
 }
 
 .mobile-menu {
@@ -2043,24 +2047,16 @@ header ul i {
     padding-bottom: 0.5rem;
   }
 
-  .md\:pl-4 {
-    padding-left: 1rem;
-  }
-
-  .md\:pr-6 {
-    padding-right: 1.5rem;
-  }
-
-  .md\:pt-16 {
-    padding-top: 4rem;
-  }
-
   .md\:pl-3 {
     padding-left: 0.75rem;
   }
 
   .md\:pr-5 {
     padding-right: 1.25rem;
+  }
+
+  .md\:pt-16 {
+    padding-top: 4rem;
   }
 
   .md\:text-left {

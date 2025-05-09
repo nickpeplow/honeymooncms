@@ -55,7 +55,7 @@ if ($restaurant_query->have_posts()) :
       </div>
 
       <div class="w-full lg:w-2/3">
-        <div class="flex flex-col justify-center p-5 pl-3">
+        <div class="flex flex-col justify-center p-3 pl-3">
           <div class="flex justify-between mb-1">
             <header>
               <div class="font-caveat text-xl font-medium text-sky-500">
