@@ -12,26 +12,25 @@
 
 
 
+<?php
+$page_id = get_the_ID(6);
 
-        <?php
-            $args = array(
-                'post_type' => 'accomodations',
-                'posts_per_page' => -1,
-                'post_status' => 'publish',
-            );
+// Get each field value
+$accomodation_title  = get_field('accomodation_title', $page_id);
+$accomodation_description = get_field('accomodation_description', $page_id);
+?>
 
-            $query = new WP_Query($args);
 
-            if ($query->have_posts()) :
-                while ($query->have_posts()) : $query->the_post(); ?>
-                    <h2 id="honeymoon-hotels-and-resorts" class="mb-3 mt-5"><?php the_title(); ?></h2>
-                    <div><?php the_content(); ?></div> <!-- Will render <a> and all valid HTML -->
-                <?php endwhile;
-                wp_reset_postdata();
-            else :
-                echo '<p>No posts found.</p>';
-            endif;
-          ?>
+        <?php if ($accomodation_title): ?>
+		    <h2 id="honeymoon-hotels-and-resorts" class="mb-3 mt-5">
+          <?php echo esc_html($accomodation_title); ?>
+        </h2>
+        <?php endif; ?>
+        <?php if ($accomodation_description): ?>
+          <?php echo wpautop(wp_kses_post($accomodation_description)); ?>
+        <?php endif; ?>
+
+      
 
 <?php
 // Query 3 accomodation posts (adjust as needed)
