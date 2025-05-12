@@ -171,6 +171,12 @@
     justify-content: center;
     align-items: center;
   }
+  @media (min-width: 768px) and (max-width: 845px){
+    #nav-header ul li{
+        padding-left: 8px;
+      padding-right: 8px;
+    }
+  }
   @media screen and (max-width: 768px) {
     footer ul a {
       background: rgba(0, 0, 0, 0.2);
@@ -190,4 +196,7 @@
       flex-wrap: wrap;
     }
   }
-  
+  .alert-callout{
+    border: 2px solid #e3b5a6;
+    border-radius: 10px;
+  }

@@ -1554,6 +1554,10 @@ header ul li:hover {
   padding-top: 1px;
 }
 
+.pl-5 {
+  padding-left: 1.25rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1862,6 +1866,13 @@ header ul i {
   align-items: center;
 }
 
+@media (min-width: 768px) and (max-width: 845px){
+  #nav-header ul li{
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   footer ul a {
     background: rgba(0, 0, 0, 0.2);
@@ -1882,6 +1893,11 @@ header ul i {
   .tab-contents .flex {
     flex-wrap: wrap;
   }
+}
+
+.alert-callout{
+  border: 2px solid #e3b5a6;
+  border-radius: 10px;
 }
 
 .hover\:bg-red-400:hover {
@@ -2223,4 +2239,3 @@ header ul i {
     --tw-ring-color: rgb(59 130 246 / var(--tw-ring-opacity, 1));
   }
 }
-  
