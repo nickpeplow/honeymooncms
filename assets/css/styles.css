@@ -1518,6 +1518,10 @@ header ul li:hover {
   padding-left: 1rem;
 }
 
+.pl-5 {
+  padding-left: 1.25rem;
+}
+
 .pl-7 {
   padding-left: 1.75rem;
 }
@@ -1552,10 +1556,6 @@ header ul li:hover {
 
 .pt-px {
   padding-top: 1px;
-}
-
-.pl-5 {
-  padding-left: 1.25rem;
 }
 
 .text-left {
@@ -1898,6 +1898,38 @@ header ul i {
 .alert-callout{
   border: 2px solid #e3b5a6;
   border-radius: 10px;
+}
+
+.highlight_link a{
+  position: relative;
+  text-decoration: none;
+  box-shadow: none;
+  display: block;
+  padding: 15px 0 10px;
+  border-top: 2px dotted #e3b5a6;
+  border-bottom: 2px dotted #e3b5a6;
+}
+
+.highlight_link a .recommend{
+  position: absolute;
+  background: #ffeede;
+  font-size: small;
+  line-height: 14px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  top: -11px;
+  left: 20px;
+  text-transform: uppercase;
+  color: #bd7f6b;
+}
+
+.highlight_link a span.more_info{
+  color: #313b3f;
+  text-decoration: none !important;
+  display: inline-block;
+  padding-left: 10px;
+  border-left: 2px solid #ebebeb;
+  margin: 5px;
 }
 
 .hover\:bg-red-400:hover {

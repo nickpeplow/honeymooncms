@@ -84,7 +84,7 @@ if ($accomodations->have_posts()) :
     $accomodation_description_3 = get_field('accomodation_description_3');
     $accomodation_availability_link_3  = get_field('accomodation_availability_link_3');
     $accomodation_rating_3 = get_field('accomodation_rating_3');
-        ?>
+    ?>
 
 
 

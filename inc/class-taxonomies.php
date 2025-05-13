@@ -83,6 +83,13 @@ class CustomTaxonomies {
                 'hierarchical' => true,
                 'args'         => []
             ],
+            'faqs_regions' => [
+                'singular'     => 'Regions',
+                'plural'       => 'Regions',
+                'post_types'   => ['faqs'],
+                'hierarchical' => true,
+                'args'         => []
+            ],
         ];
 
         foreach ($taxonomies as $key => $settings) {
