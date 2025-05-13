@@ -22,6 +22,14 @@
                 'post_type' => 'faqs',
                 'posts_per_page' => -1,
                 'post_status' => 'publish',
+                 'orderby' => 'date',
+                'order'   => 'Asc',
+                'tax_query'      => array(
+                  array(
+                    'taxonomy' => 'faqs_regions',
+                    'operator' => 'NOT EXISTS', // This will get posts with NO terms assigned in this taxonomy
+        ),
+    ),
             );
 
             $query = new WP_Query($args);
