@@ -1090,10 +1090,6 @@ header ul li:hover {
   max-height: 100dvh;
 }
 
-.min-h-\[220px\] {
-  min-height: 220px;
-}
-
 .w-16 {
   width: 4rem;
 }
@@ -2090,10 +2086,6 @@ header ul i {
 
   .md\:hidden {
     display: none;
-  }
-
-  .md\:min-h-\[220px\] {
-    min-height: 220px;
   }
 
   .md\:min-h-\[120px\] {

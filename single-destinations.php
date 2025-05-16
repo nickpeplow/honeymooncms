@@ -235,6 +235,13 @@ $region_description = get_field('region_description', $page_id);
           $args = array(
             'post_type' => 'accomodations',
             'posts_per_page' => -1,
+            'tax_query' => array(
+      array(
+        'taxonomy' => 'accomodations_accomodation_types',
+        'field'    => 'term_id',
+        'operator' => 'EXISTS', // Only include posts that have terms in this taxonomy
+      ),
+    ),
           );
           $accomodations_query = new WP_Query($args);
 
