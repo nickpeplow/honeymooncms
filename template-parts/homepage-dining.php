@@ -47,7 +47,7 @@ if ($restaurant_query->have_posts()) :
       <div class="basis-1/3">
         <figure class="min-[280px]:w-1/1 p-2 relative">
           <?php if (has_post_thumbnail()) : ?>
-            <?php the_post_thumbnail('medium', ['class' => 'w-full h-[280px] min-[280px]:h-full object-cover rounded-lg']); ?>
+            <?php the_post_thumbnail('medium', ['class' => 'w-full h-[280px] min-[280px]:h-full md:min-h-[120px] lg:min-h-0 object-cover rounded-lg']); ?>
           <?php else : ?>
             <img class="w-full h-[280px] object-cover rounded-lg" src="<?php echo get_template_directory_uri(); ?>/assets/images/placeholder.jpg" alt="Placeholder">
           <?php endif; ?>

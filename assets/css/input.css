@@ -173,8 +173,8 @@
   }
   @media (min-width: 768px) and (max-width: 845px){
     #nav-header ul li{
-        padding-left: 8px;
-      padding-right: 8px;
+      padding-left: 7px;
+      padding-right: 7px;
     }
   }
   @media screen and (max-width: 768px) {

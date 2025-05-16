@@ -1090,6 +1090,10 @@ header ul li:hover {
   max-height: 100dvh;
 }
 
+.min-h-\[220px\] {
+  min-height: 220px;
+}
+
 .w-16 {
   width: 4rem;
 }
@@ -1872,8 +1876,8 @@ header ul i {
 
 @media (min-width: 768px) and (max-width: 845px){
   #nav-header ul li{
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 7px;
+    padding-right: 7px;
   }
 }
 
@@ -2033,10 +2037,6 @@ header ul i {
     display: none;
   }
 
-  .sm\:basis-\[100\%\] {
-    flex-basis: 100%;
-  }
-
   .sm\:basis-1\/3 {
     flex-basis: 33.333333%;
   }
@@ -2092,16 +2092,16 @@ header ul i {
     display: none;
   }
 
+  .md\:min-h-\[220px\] {
+    min-height: 220px;
+  }
+
+  .md\:min-h-\[120px\] {
+    min-height: 120px;
+  }
+
   .md\:max-w-8 {
     max-width: 2rem;
-  }
-
-  .md\:basis-1\/3 {
-    flex-basis: 33.333333%;
-  }
-
-  .md\:basis-2\/3 {
-    flex-basis: 66.666667%;
   }
 
   .md\:grid-cols-12 {
@@ -2193,6 +2193,10 @@ header ul i {
 
   .lg\:hidden {
     display: none;
+  }
+
+  .lg\:min-h-0 {
+    min-height: 0px;
   }
 
   .lg\:w-1\/2 {
