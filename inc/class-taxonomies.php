@@ -41,6 +41,13 @@ class CustomTaxonomies {
                 'hierarchical' => true,
                 'args'         => []
             ],
+            'accomodations_accomodation_group' => [
+                'singular'     => 'Accomodation Category',
+                'plural'       => 'Accomodation Categories',
+                'post_types'   => ['accomodations'],
+                'hierarchical' => true,
+                'args'         => []
+            ],
             'activities_regions' => [
                 'singular'     => 'Regions',
                 'plural'       => 'Regions',
