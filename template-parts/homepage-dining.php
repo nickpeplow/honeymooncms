@@ -44,7 +44,7 @@ if ($restaurant_query->have_posts()) :
     $region_name = !empty($region_terms) ? $region_terms[0]->name : '';
     ?>
     <div class="flex flex-wrap lg:flex-nowrap">
-      <div class="basis-1/3">
+      <div class="basis-[100%] sm:basis-1/3">
         <figure class="min-[280px]:w-1/1 p-2 relative">
           <?php if (has_post_thumbnail()) : ?>
             <?php the_post_thumbnail('medium', ['class' => 'w-full h-[280px] min-[280px]:h-full md:min-h-[120px] lg:min-h-0 object-cover rounded-lg']); ?>
@@ -54,7 +54,7 @@ if ($restaurant_query->have_posts()) :
         </figure>
       </div>
 
-      <div class="w-full lg:w-2/3">
+      <div class="basis-[100%] sm:basis-2/3">
         <div class="flex flex-col justify-center p-3 pl-3">
           <div class="flex justify-between mb-1">
             <header>

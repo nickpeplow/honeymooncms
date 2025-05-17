@@ -76,7 +76,7 @@ $itineraries_description = get_field('itineraries_description', $page_id);
               $itinerary_terms = wp_get_post_terms(get_the_ID(), 'itineraries_itinerary_types');
               ?>
               <div class="flex">
-                <div class="basis-1/3">
+                <div class="basis-[100%] sm:basis-1/3">
                   <figure class="min-[280px]:w-1/1 p-2 relative">
                     <?php if (has_post_thumbnail()) : ?>
                       <?php the_post_thumbnail('medium', ['class' => 'w-full h-[280px] min-[280px]:h-full object-cover rounded-lg']); ?>
@@ -90,7 +90,7 @@ $itineraries_description = get_field('itineraries_description', $page_id);
                   </figure>
                 </div>
 
-                <div class="basis-2/3">
+                <div class="basis-[100%] sm:basis-2/3">
                   <div class="flex flex-col justify-center p-3 pl-3">
                     <div class="flex justify-between mb-1">
                       <header>
@@ -147,7 +147,7 @@ $itineraries_description = get_field('itineraries_description', $page_id);
                 $itinerary_terms = wp_get_post_terms(get_the_ID(), 'itineraries_itinerary_types');
                 ?>
                 <div class="flex mb-6">
-                  <div class="basis-1/3">
+                  <div class="basis-[100%] sm:basis-1/3">
                     <figure class="min-[280px]:w-1/1 p-2 relative">
                       <?php if (has_post_thumbnail()) : ?>
                         <?php the_post_thumbnail('medium', ['class' => 'w-full h-[280px] min-[280px]:h-full object-cover rounded-lg']); ?>
@@ -161,7 +161,7 @@ $itineraries_description = get_field('itineraries_description', $page_id);
                     </figure>
                   </div>
 
-                  <div class="basis-2/3">
+                  <div class="basis-[100%] sm:basis-2/3">
                     <div class="flex flex-col justify-center p-5 pl-3">
                       <div class="flex justify-between mb-1">
                         <header>
