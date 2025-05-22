@@ -36,6 +36,11 @@
     #right-sticky li.active {
       background-color: #ffeede;
     }
+    .toc a.active {
+      background-color: #fdebd0;
+      color: #000;
+    }
+
     .border-color {
       border-color: #e2b1a2;
     }
@@ -243,4 +248,86 @@
 	.md\:col-span-3{
 	   grid-column: span 4 / span 4 !important;
   }
+}
+.wp-block-gallery{
+  margin-top: 30px;
+}
+.wp-block-gallery .wp-block-image .wp-element-caption{
+   position: relative !important;
+   background: none !important;
+   color: #353439 !important;
+   line-height: 20px !important;
+   font-weight: 400 !important;
+   text-shadow: none !important;
+}
+.wp-block-gallery .wp-block-image{
+  border: 1px dashed white; 
+  overflow: hidden;
+  border-radius: 0.5rem !important;
+}
+.wp-block-gallery .wp-block-image:hover{
+   border: 1px dashed #e2b1a2;
+}
+.wp-block-gallery .wp-block-image img{
+  border-radius: 0.5rem !important;
+}
+h2 {
+  margin-bottom: 0.75rem;
+}
+p {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem; 
+}
+/* Apply grid layout to the gallery */
+.gallery.gallery-columns-1 {
+  grid-template-columns: repeat(1, 1fr); /* 3 columns */
+}
+.gallery.gallery-columns-2 {
+  grid-template-columns: repeat(2, 1fr); /* 3 columns */
+}
+.gallery.gallery-columns-3 {
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+}
+.gallery.gallery-columns-4 {
+  grid-template-columns: repeat(4, 1fr); /* 3 columns */
+}
+.gallery {
+  display: grid;
+  gap: 1rem; /* Gap between items */
+  margin-top: 2.75rem;
+  margin-bottom: 2.75rem;
+}
+
+/* Style each gallery item */
+.gallery.gallery-columns-1 .gallery-item {
+  border: 1px dotted #e2b1a2; /* White dashed border */
+  padding: 0.75rem;
+}
+.gallery .gallery-item {
+  position: relative;
+  border: 1px dashed white; /* White dashed border */
+  overflow: hidden; /* Ensure the border doesn't affect images */
+  border-radius: 0.5rem; /* Rounded corners */
+}
+
+/* Style the image inside each gallery item */
+.gallery .gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem; /* Rounded corners */
+  object-fit: cover;
+}
+
+/* Style the caption text */
+figcaption.gallery-caption {
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: initial;
+  padding-top: 0.5rem;
+}
+
+/* Optional: Add hover effects */
+.gallery .gallery-item:hover {
+  border: 1px dashed #e2b1a2;
 }

@@ -636,6 +636,11 @@ aside {
   background-color: #ffeede;
 }
 
+.toc a.active {
+  background-color: #fdebd0;
+  color: #000;
+}
+
 .border-color {
   border-color: #e2b1a2;
 }
@@ -904,6 +909,10 @@ header ul li:hover {
 
 .col-span-2 {
   grid-column: span 2 / span 2;
+}
+
+.m-0 {
+  margin: 0px;
 }
 
 .m-auto {
@@ -1259,12 +1268,20 @@ header ul li:hover {
   margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
 .overflow-y-auto {
   overflow-y: auto;
 }
 
 .whitespace-nowrap {
   white-space: nowrap;
+}
+
+.rounded {
+  border-radius: 0.25rem;
 }
 
 .rounded-full {
@@ -1330,6 +1347,11 @@ header ul li:hover {
   border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
 }
 
+.bg-Purple {
+  --tw-bg-opacity: 1;
+  background-color: rgb(130 125 168 / var(--tw-bg-opacity, 1));
+}
+
 .bg-brown {
   --tw-bg-opacity: 1;
   background-color: rgb(255 238 222 / var(--tw-bg-opacity, 1));
@@ -1353,6 +1375,10 @@ header ul li:hover {
 .bg-info {
   --tw-bg-opacity: 1;
   background-color: rgb(255 238 222 / var(--tw-bg-opacity, 1));
+}
+
+.bg-lightBlack {
+  background-color: #0000004d;
 }
 
 .bg-lightPuple {
@@ -1665,6 +1691,10 @@ header ul li:hover {
   line-height: 1;
 }
 
+.leading-normal {
+  line-height: 1.5;
+}
+
 .leading-p {
   line-height: 32px;
 }
@@ -1739,6 +1769,12 @@ header ul li:hover {
 
 .opacity-50 {
   opacity: 0.5;
+}
+
+.shadow {
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .shadow-lg {
@@ -1952,6 +1988,121 @@ header ul i {
   .md\:col-span-3{
     grid-column: span 4 / span 4 !important;
   }
+}
+
+.wp-block-gallery{
+  margin-top: 30px;
+}
+
+.wp-block-gallery .wp-block-image .wp-element-caption{
+  position: relative !important;
+  background: none !important;
+  color: #353439 !important;
+  line-height: 20px !important;
+  font-weight: 400 !important;
+  text-shadow: none !important;
+}
+
+.wp-block-gallery .wp-block-image{
+  border: 1px dashed white;
+  overflow: hidden;
+  border-radius: 0.5rem !important;
+}
+
+.wp-block-gallery .wp-block-image:hover{
+  border: 1px dashed #e2b1a2;
+}
+
+.wp-block-gallery .wp-block-image img{
+  border-radius: 0.5rem !important;
+}
+
+h2 {
+  margin-bottom: 0.75rem;
+}
+
+p {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Apply grid layout to the gallery */
+
+.gallery.gallery-columns-1 {
+  grid-template-columns: repeat(1, 1fr);
+  /* 3 columns */
+}
+
+.gallery.gallery-columns-2 {
+  grid-template-columns: repeat(2, 1fr);
+  /* 3 columns */
+}
+
+.gallery.gallery-columns-3 {
+  grid-template-columns: repeat(3, 1fr);
+  /* 3 columns */
+}
+
+.gallery.gallery-columns-4 {
+  grid-template-columns: repeat(4, 1fr);
+  /* 3 columns */
+}
+
+.gallery {
+  display: grid;
+  gap: 1rem;
+  /* Gap between items */
+  margin-top: 2.75rem;
+  margin-bottom: 2.75rem;
+}
+
+/* Style each gallery item */
+
+.gallery.gallery-columns-1 .gallery-item {
+  border: 1px dotted #e2b1a2;
+  /* White dashed border */
+  padding: 0.75rem;
+}
+
+.gallery .gallery-item {
+  position: relative;
+  border: 1px dashed white;
+  /* White dashed border */
+  overflow: hidden;
+  /* Ensure the border doesn't affect images */
+  border-radius: 0.5rem;
+  /* Rounded corners */
+}
+
+/* Style the image inside each gallery item */
+
+.gallery .gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  /* Rounded corners */
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* Style the caption text */
+
+figcaption.gallery-caption {
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: initial;
+  padding-top: 0.5rem;
+}
+
+/* Optional: Add hover effects */
+
+.gallery .gallery-item:hover {
+  border: 1px dashed #e2b1a2;
+}
+
+.hover\:bg-lightBlack:hover {
+  background-color: #0000004d;
 }
 
 .hover\:bg-red-400:hover {
@@ -2193,10 +2344,6 @@ header ul i {
 
   .lg\:w-1\/2 {
     width: 50%;
-  }
-
-  .lg\:w-2\/3 {
-    width: 66.666667%;
   }
 
   .lg\:max-w-10 {

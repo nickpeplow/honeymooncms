@@ -8,6 +8,61 @@
  */
 get_header(); ?>
 
+<div class="bg-Purple px-2 py-1">
+  <div class="flex overflow-x-auto justify-center">
+    
+    <!-- Tab 1 - Active -->
+    <a href="/blog/itineraries/7-day-classic-bali-itinerary" class="bg-lightBlack text-white px-2 py-1 rounded shadow">
+      <div class="font-bold text-sm leading-normal text-center">7-Day</div>
+      <div class="text-xs">Classic Itinerary</div>
+    </a>
+
+    <!-- Tab 2 -->
+    <a href="/blog/itineraries/7-day-away-from-the-crowds-itinerary" class="text-white px-2 py-1 hover:bg-lightBlack rounded m-0">
+      <div class="font-bold text-sm leading-normal text-center">7-Day</div>
+      <div class="text-xs">Away from crowds</div>
+    </a>
+
+    <!-- Tab 3 -->
+    <a href="/blog/itineraries/hipster-itinerary" class="text-white px-2 py-1 hover:bg-lightBlack rounded m-0">
+      <div class="font-bold text-sm leading-normal text-center">7-Day</div>
+      <div class="text-xs">Hipster Itinerary</div>
+    </a>
+
+    <!-- Tab 4 -->
+    <a href="/blog/itineraries/relaxed-itinerary" class="text-white px-2 py-1 hover:bg-lightBlack rounded m-0">
+      <div class="font-bold text-sm leading-normal text-center">7-Day</div>
+      <div class="text-xs">Relaxed Itinerary</div>
+    </a>
+
+    <!-- Tab 5 -->
+    <a href="/blog/itineraries/bali-highlights" class="text-white px-2 py-1 hover:bg-lightBlack rounded m-0">
+      <div class="font-bold text-sm leading-normal text-center">10-Day</div>
+      <div class="text-xs">Bali Highlights</div>
+    </a>
+
+    <!-- Tab 6 -->
+    <a href="/blog/itineraries/diving-itinerary" class="text-white px-2 py-1 hover:bg-lightBlack rounded m-0">
+      <div class="font-bold text-sm leading-normal text-center">12-Day</div>
+      <div class="text-xs">Diving Itinerary</div>
+    </a>
+
+    <!-- Tab 7 -->
+    <a href="/blog/itineraries/luxury-itinerary" class="text-white px-2 py-1 hover:bg-lightBlack rounded m-0">
+      <div class="font-bold text-sm leading-normal text-center">14-Day</div>
+      <div class="text-xs">Luxury Itinerary</div>
+    </a>
+
+    <!-- Tab 8 -->
+    <a href="/blog/itineraries/budget-travelers" class="text-white px-2 py-1 hover:bg-lightBlack rounded m-0">
+      <div class="font-bold text-sm leading-normal text-center">14-Day</div>
+      <div class="text-xs">Budget Travelers</div>
+    </a>
+
+  </div>
+</div>
+
+
 
 <main id="primary" class="site-main">
 

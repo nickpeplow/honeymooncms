@@ -16,6 +16,8 @@ module.exports = {
         green: "#1FC900",
         brown: "#FFEEDE",
         lightPuple: "#615D81",
+        Purple: "#827da8",
+        lightBlack: "#0000004d",
       },
       fontSize: {
         h1: "38px",
