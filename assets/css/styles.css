@@ -1047,6 +1047,10 @@ header ul li:hover {
   margin-top: 2.25rem;
 }
 
+.mb-0 {
+  margin-bottom: 0px;
+}
+
 .block {
   display: block;
 }
