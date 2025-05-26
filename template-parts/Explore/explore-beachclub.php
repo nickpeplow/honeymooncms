@@ -10,7 +10,40 @@
 
 ?>
 
-<!-- Club 1 -->
+
+<section class="flex flex-col container m-auto">
+      <div
+        class="container mx-auto flex justify-center items-start flex-col py-5"
+      >
+        <h1 class="text-black font-bold text-left mb-3 mt-5 ">
+          Our 15 Favorite Beach Clubs in Bali (2025)
+        </h1>
+        <p class="written-by text-left text-a">  
+          Last updated Feb 17, 2025 by
+          <a class="text-tertiary underline font-bold" href="/about-us/">Olivia &amp; Dirk</a>, based on our 7 years in
+          Bali. We can help with
+          <a class="text-tertiary underline font-bold" href="/services/bali-honeymoon-packages/">honeymoon packages</a>,
+          <a class="text-tertiary underline font-bold" href="/services/unique-experiences/">experiences</a> and our
+          <a class="text-tertiary underline font-bold" href="/services/honeymoon-planning/">planning service</a>.
+        </p>
+      </div>
+      <img
+        src="<?php echo get_template_directory_uri(); ?>/assets/images/best-beach-clubs-bali.webp"
+        class="rounded-lg w-full my-5"
+      />
+</section>
+
+<section class="container m-auto">
+  <div class="flex flex-col-reverse md:grid md:grid-cols-12 gap-4">
+    <div class="md:col-span-9 md:pr-5">
+    <p class="my-3">
+        <p><strong>Bali boasts some of the best Beach Clubs in the world. Most of them can be found facing the Indian Ocean just north of Bali’s airport, near the towns of <a class="text-tertiary underline font-bold" href="/regions/seminyak-honeymoon/">Seminyak</a> and <a class="text-tertiary underline font-bold" href="/regions/canggu-honeymoon/">Canggu</a>. Another region with fancy ocean-front Day Clubs is <a class="text-tertiary underline font-bold" href="/regions/uluwatu-honeymoon/">Uluwatu</a>, however often they are on a cliff, so while you can view the ocean, its hard to reach the actual beach!</strong></p>
+
+        <p>We believe a visit to a Beach Club is a <em>must-do</em> during any <a class="text-tertiary underline font-bold" href="/">Bali honeymoon</a> or vacation as a couple. We have been living in Bali for over 6 years and have visited many, sometimes together as a couple and sometimes with friends. Below are our favorites.</p>
+
+        <p>Couples visiting Bali might also be interested in our list of best <a class="text-tertiary underline font-bold" href="/explore/romantic-wellness-in-bali/">wellness</a>, <a class="text-tertiary underline font-bold" href="/explore/best-fine-dining-in-bali/">fine dining</a>, <a class="text-tertiary underline font-bold" href="/stay/most-luxurious-hotels-bali/">most luxury hotels</a> or <a class="text-tertiary underline font-bold" href="/stay/private-pool-villas-bali/">private pool villas</a> in Bali.</p>
+    </p>
+    <!-- Club 1 -->
 
 <h2 id="finns-beach-club" class="mb-0 mt-6">1. Finns Beach Club (Canggu)</h2>
 <span class="italic text-gray-500">Berawa near Canggu</span>
@@ -84,3 +117,68 @@ For a more elevated dining experience, visit Saltlick on the second floor, where
 <p>Jungle Fish is part of the Chapung Se Bali resort. Reserve a day at a Jungle Fish in advance to ensure a peaceful experience, as access is limited.</p>
                 
 <a class="read_more font-bold" href="https://www.chapung.com/ubud/restaurants/jungle-fish-pool-bar/" target="_blank">Visit Website</a>
+
+<div class="gap-4 bg-info p-5 rounded-lg mt-8">
+        <div class="grid grid-cols-12">
+          <div class="col-span-10">
+            <h2 class="my-3">We are Olivia &amp; Dirk</h2>
+            <p class="italic text-gray-500">
+              Hi! We have put together this guide with a lot of care, based
+              on our own experiences. As a couple, we have lived in Bali for
+              the past 5 years, and we fell in love with the island. We have
+              visited every corner of Bali, especially the romantic places
+              ;-). While our articles do contain affiliate links, you can
+              trust us to recommend only the experiences that we love. >
+            </p>
+          </div>
+          <div class="col-span-2">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/olivia-dirk.png" class="rounded-full w-full" />
+          </div>
+        </div>
+        <p>
+          We can help make your honeymoon perfect:<br />🧡 Check our
+          <a class="text-tertiary underline font-bold" href="#">Bali honeymoon packages</a>
+            for a stress-free romantic honeymoon.<br />🧡 Let us design a personalized
+          <a class="text-tertiary underline font-bold" href="#">custom honeymoon itinerary</a>
+            based on your interests.<br />🧡 Book
+          <a class="text-tertiary underline font-bold" href="#">unique romantic experiences</a>
+              with us.
+        </p>
+      </div>
+
+    </div>
+    <div class="md:col-span-3 md:pl-3">
+         <aside class="border rounded-lg">
+          <h4
+            class="bg-primary p-3 rounded-tl-lg rounded-tr-lg text-h4 font-semibold"
+          >
+            On this page:
+          </h4>
+          <ul id="right-sticky">
+            <li class="border-b">
+              <a
+                class="p-3 block text-a"
+                href="#finns-beach-club-(canggu)"
+                class=""
+                >1. Finns Beach Club (Canggu)</a
+              >
+            </li>
+            <li class="border-b">
+              <a class="p-3 block text-a" href="#ku-de-ta-beachclub" class=""
+                >2. KU DE TA Beachclub</a
+              >
+            </li>
+            <li class="border-b">
+              <a class="p-3 block text-a" href="#jungle-fish-infinity-pool-&-bar" class=""
+                >3. Jungle Fish Infinity Pool & Bar</a
+              >
+            </li>
+          </ul>
+        </aside>
+    </div>
+  </div>
+</section>
+
+
+
+

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: Explore Page Template
+ * Template Name: Romantic Activities
  *
  * This is a custom page template.
  *
@@ -12,12 +12,12 @@ get_header(); ?>
   <div class="flex overflow-x-auto justify-center">
     
     <!-- Tab 1 - Active -->
-    <a href="/blog/itineraries/7-day-classic-bali-itinerary" class="bg-lightBlack text-white px-2 py-1 rounded shadow">
+    <a href="/blog/itineraries/7-day-classic-bali-itinerary" class="text-white px-2 py-1 hover:bg-lightBlack rounded m-0">
       <div class="font-bold text-sm leading-normal text-center">Beach Clubs</div>
     </a>
 
     <!-- Tab 2 -->
-    <a href="/blog/itineraries/7-day-away-from-the-crowds-itinerary" class="text-white px-2 py-1 hover:bg-lightBlack rounded m-0">
+    <a href="/blog/itineraries/7-day-away-from-the-crowds-itinerary" class="bg-lightBlack text-white px-2 py-1 rounded shadow">
       <div class="font-bold text-sm leading-normal text-center">Romantic Activities</div>
     </a>
 
@@ -55,24 +55,8 @@ get_header(); ?>
     while (have_posts()) :
         the_post();
 
-        get_template_part('template-parts/BeachClub/explore', 'hero');
+         get_template_part('template-parts/Explore/explore', 'romanticactivities');
     ?>
-
-    <section class="container m-auto">
-        <div class="flex flex-col-reverse md:grid md:grid-cols-12 gap-4">
-            <div class="md:col-span-9 md:pr-5">
-                <?php
-                    get_template_part('template-parts/BeachClub/explore', 'introduction');
-                    get_template_part('template-parts/BeachClub/explore', 'beachclub'); 
-                ?>
-            </div>
-			<div class="md:col-span-3 md:pl-3">
-                <?php
-                    get_template_part('template-parts/BeachClub/explore', 'Sidebar'); 
-                ?>
-			</div>
-        </div>
-    </section>
 
     <?php
 

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: Single itineraries Template
+ * Template Name: Single Accomodation Template
  *
  * This is a custom page template.
  *

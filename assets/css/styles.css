@@ -867,6 +867,10 @@ header ul li:hover {
   top: 0px;
 }
 
+.top-2 {
+  top: 0.5rem;
+}
+
 .top-6 {
   top: 1.5rem;
 }
@@ -909,6 +913,10 @@ header ul li:hover {
 
 .col-span-2 {
   grid-column: span 2 / span 2;
+}
+
+.float-right {
+  float: right;
 }
 
 .m-0 {
@@ -959,12 +967,21 @@ header ul li:hover {
   margin-bottom: 1.25rem;
 }
 
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .-ms-3 {
   margin-inline-start: -0.75rem;
 }
 
 .-mt-px {
   margin-top: -1px;
+}
+
+.mb-0 {
+  margin-bottom: 0px;
 }
 
 .mb-1 {
@@ -1007,6 +1024,14 @@ header ul li:hover {
   margin-inline-start: 0.5rem;
 }
 
+.mt-0 {
+  margin-top: 0px;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
 .mt-11 {
   margin-top: 2.75rem;
 }
@@ -1047,10 +1072,6 @@ header ul li:hover {
   margin-top: 2.25rem;
 }
 
-.mb-0 {
-  margin-bottom: 0px;
-}
-
 .block {
   display: block;
 }
@@ -1065,6 +1086,10 @@ header ul li:hover {
 
 .inline-flex {
   display: inline-flex;
+}
+
+.table {
+  display: table;
 }
 
 .grid {
@@ -1111,12 +1136,24 @@ header ul li:hover {
   width: 1rem;
 }
 
+.w-44 {
+  width: 11rem;
+}
+
 .w-56 {
   width: 14rem;
 }
 
 .w-full {
   width: 100%;
+}
+
+.min-w-\[11rem\] {
+  min-width: 11rem;
+}
+
+.max-w-5xl {
+  max-width: 64rem;
 }
 
 .max-w-6 {
@@ -1651,6 +1688,10 @@ header ul li:hover {
   line-height: 1rem;
 }
 
+.text-h2 {
+  font-size: 32px;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1718,9 +1759,19 @@ header ul li:hover {
   color: rgb(107 114 128 / var(--tw-text-opacity, 1));
 }
 
+.text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity, 1));
+}
+
 .text-gray-700 {
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity, 1));
+}
+
+.text-gray-800 {
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity, 1));
 }
 
 .text-gray-900 {
@@ -2103,6 +2154,16 @@ figcaption.gallery-caption {
 
 .gallery .gallery-item:hover {
   border: 1px dashed #e2b1a2;
+}
+
+.widget_left{
+  float: right;
+  padding: 10px 0 20px 20px;
+  width: 35%;
+  background-size: cover;
+  background-position: center;
+  min-height: 150px;
+  position: relative;
 }
 
 .hover\:bg-lightBlack:hover {
